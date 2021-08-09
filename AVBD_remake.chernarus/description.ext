@@ -1,0 +1,236 @@
+respawn = 3;
+respawnDelay = 30;
+respawnOnStart = -1;
+
+respawnTemplates[] = {"MenuPosition", "MenuInventory", "Tickets", "Spectator"};
+
+class Header
+{
+	gameType = Escape;
+	minPlayers = 1;
+	maxPlayers = 10;
+};
+
+dev = "Helgust";
+briefingName = $STR_HLG_EscapeFromChernarus_missionName;
+author = $STR_hlg_Helgust;
+overviewPicture = "load_screen.paa";
+overviewText = $STR_HLG_EscapeFromChernarus_overview;
+onLoadName = $STR_HLG_EscapeFromChernarus_onLoadName;
+onLoadMission = $STR_HLG_EscapeFromChernarus_overview;
+loadScreen = "load_screen.paa";
+disabledAI = 0;
+
+// Player loadouts
+#include "LoadoutClasses.inc"
+
+// Custom, non-sandbox groups
+#include "CustomGroups.inc"
+
+onPauseScript="cly_jukebox.sqf";
+
+class Params
+{
+	class Loadouts
+	{
+		title = $STR_A3_Escape_param_respawnLoadouts;
+		values[] = {0, 1, 2};
+		texts[] = {$STR_A3_Escape_param_respawnLoadouts01, $STR_A3_Escape_param_respawnLoadouts02, $STR_A3_Escape_param_respawnLoadouts03};
+		default = 1;
+		file = "params\respawnLoadouts.sqf";
+	};
+
+	class EnemyEquipment
+	{
+		title = $STR_A3_Escape_param_enemyEquipment;
+		values[] = {0, 1};
+		texts[] = {$STR_A3_Escape_param_enemyEquipment01, $STR_A3_Escape_param_enemyEquipment02};
+		default = 1;
+		file = "params\enemyEquipment.sqf";
+	};
+
+	class noOfRespawns
+	{
+		title = $STR_A3_rscdisplaydebriefing_loadstext_mp;
+		values[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+		texts[] = {"0", $STR_A3_Escape_param_respawnGroup10, $STR_A3_Escape_param_respawnGroup20, $STR_A3_Escape_param_respawnGroup30, $STR_A3_Escape_param_respawnGroup40, $STR_A3_Escape_param_respawnGroup50, $STR_A3_Escape_param_respawnGroup100, $STR_A3_Escape_param_respawnIndividual01, $STR_A3_Escape_param_respawnIndividual02, $STR_A3_Escape_param_respawnIndividual03, $STR_A3_Escape_param_respawnIndividual04, $STR_A3_Escape_param_respawnIndividual05, $STR_A3_Escape_param_respawnIndividual10};
+		default = 3;
+		file = "params\setRespawn.sqf";
+	};
+
+	class SpecialEvents
+	{
+		title = $STR_A3_Escape_param_enemySupports;
+		values[] = {0, 1};
+		texts[] = {$STR_disabled, $STR_A3_Escape_param_enemySupportsOn};
+		default = 1;
+		file = "params\setSpecialEvents.sqf";
+	};
+
+	class RandomHorde
+	{
+		title = "Random Hordes";
+		values[] = {0, 1};
+		texts[] = {$STR_disabled, $STR_enabled};
+		default = 1;
+		file = "params\setRandomHordes.sqf";
+	};
+
+	class AllowCrewInImmobile
+	{
+		title = $STR_A3_Escape_param_fubar;
+		values[] = {0, 1};
+		texts[] = {$STR_A3_Escape_param_fubarLeave, $STR_A3_Escape_param_fubarStay};
+		default = 1;
+		file = "params\setCrewInImmobile.sqf";
+	};
+
+	//#define DAYTIMEHOUR_DEFAULT		18,15
+	//#define WEATHER_DEFAULT			100
+	#define DEBUGCONSOLE_DEFAULT		0
+	#define TIMEACCELERATION_DEFAULT	1
+
+	#define VIEW_DISTANCE_MIN		1000
+	#define VIEW_DISTANCE_MAX		1500
+	#define VIEW_DISTANCE_DEFAULT		1000
+
+	//#include "\a3\functions_f\Params\paramDaytimeHour.inc"
+	//#include "\a3\functions_f\Params\paramWeather.inc"
+	#include "\a3\functions_f\Params\paramDebugConsole.inc"
+	#include "\a3\Functions_F_MP_Mark\Params\paramTimeAcceleration.inc"
+	#include "\a3\Functions_F_Heli\Params\paramViewDistance.inc"
+    #include "\a3\functions_f\params\paramRevive.inc"
+};
+
+class CfgDebriefing
+{
+	class End1
+	{
+        	title = $STR_A3_mission_completed_title;
+        	subtitle = "";
+        	description = $STR_hlg_escapefromchernarus_end01desc;
+	};
+	class Loser: End1
+	{
+        	title = $STR_A3_mission_failed_title;
+        	description = $STR_A3_EscapeFromTanoa_end03Desc;
+		subtitle = $STR_A3_EscapeFromTanoa_end03Sub;
+	};
+};
+
+corpseManagerMode = 1; 		// Type of removed bodies: 0 - none, 1 - all, 2 - only respawnable, 3 - only non-respawnable
+corpseLimit = 24; 		// Max number of bodies which can be available at the same time. When exceeded, start deleting immediately.
+corpseRemovalMinTime = 300; 	// Minimal time in seconds a body stays in the scene (can't be removed sooner).
+corpseRemovalMaxTime = 360; 	// Maximal time in seconds after which a dead body is removed (can't stay longer).
+
+wreckManagerMode = 1; 		// Type of removed wrecks: 0 - none, 1 - all, 2 - only respawnable, 3 - only non-respawnable
+wreckLimit = 8; 		// Max number of wrecks which can be available at the same time. When exceeded, start deleting immediately.
+wreckRemovalMinTime = 300; 	// Minimal time in seconds a wreck stays in the scene (can't be removed sooner).
+wreckRemovalMaxTime = 360;	// Maximal time in seconds after which a wreck is removed (can't stay longer).
+
+minPlayerDistance = 50;	// Bodies and wrecks in this vicinity of players will not be deleted even if the timer/limit condition is met.
+
+class CfgSounds
+{
+	sounds[] = {};
+	class DistantMortar
+	{
+		name = "Distant mortar fire";
+		sound[] = {"@A3\Sounds_F\arsenal\weapons_static\Mortar\Mortar82mm_distShot_01", 1, 1};
+		titles[] = {0,""};
+	};
+	class DistantHowitzer
+	{
+		name = "Distant howitzer fire";
+		sound[] = {"@A3\Sounds_F\arsenal\weapons_vehicles\cannon_155mm\CannonHeavy_distShot", 0.5, 1};
+		titles[] = {0,""};
+	};
+	class SecretOfGreenMountain
+	{
+		name = "SecretOfGreenMountain";
+		sound[] = {"\Music\SecretOfGreenMountain.ogg",5000,1,40000};
+		titles[] = {0,""};
+	};
+	class Oralo
+	{
+		name = "Oralo";
+		sound[] = {"\Music\oralo.ogg",5000,1,4000};
+		titles[] = {0,""};
+	};
+	class Horde
+	{
+		name="Horde";
+		sound[]={"\Sound\horde.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+};
+class CfgMusic
+{
+    tracks[]={};
+    class Radio1
+    {
+    name = "Radio1";
+    sound[] = {"\Music\Vitya.ogg", db-5.0, 1.0};
+    };
+
+	class auldale
+	{
+		name="auldale";
+		sound[]={"\Music\auldale.ogg",db+10,1};
+		titles[]={};
+	};
+	class cradle
+	{
+		name="cradle";
+		sound[]={"\Music\cradle.ogg",db+10,1};
+		titles[]={};
+	};
+	class kurshok
+	{
+		name="kurshok";
+		sound[]={"\Music\kurshok.ogg",db+10,1};
+		titles[]={};
+	};
+	class oldquarter
+	{
+		name="oldquarter";
+		sound[]={"\Music\oldquarter.ogg",db+10,1};
+		titles[]={};
+	};
+	class pavelock
+	{
+		name="pavelock";
+		sound[]={"\Music\pavelock.ogg",db+10,1};
+		titles[]={};
+	};
+};
+class CfgFunctions
+{
+	class HLG
+	{
+		class EscapeFromChernarus
+		{
+			file = "Functions";
+			class EfC_DisplayTickets	{};
+			class EfC_CDFStalkers	{};
+			class AVBD_Horde	{};
+			class EfC_NATOStalkers		{};
+			class EfC_SniperTeam		{};
+			class EfC_HouseFind		{};
+			class EfC_HousePopulate		{};
+			class EfC_AmmoboxNATO		{};
+			class EfC_SupplyboxNATO		{};
+			class EfC_SupplyboxCSAT		{};
+			class EfC_AmmoboxCSAT		{};
+			class EfC_AmmoboxCSATBase	{};
+			class EfC_AmmoboxSyndikat	{};
+			class EfC_AmmoboxSpecial	{};
+			class EfC_LimitFAKs		{};
+			class EfC_CreateMinefield	{};
+			class EfC_PopulateCheckpoint	{};
+			class EfC_PopulatePost		{};
+			class EfC_PopulateTower		{};
+			class EfC_SpecialEvents		{};
+		};
+	};
+};

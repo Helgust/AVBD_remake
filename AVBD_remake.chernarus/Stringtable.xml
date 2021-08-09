@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="Any Name">
+	<Package name="Mission One">
+		<Container name="escapefromchernarus">
+          <Key ID="str_hlg_escape_param_respawnloadouts03">
+            <Original>Survivor (25% ammo, no optics)</Original>
+            <Chinese>倖存者（25% 彈藥，無瞄鏡）</Chinese>
+            <French>Rescapé (25 % de munitions, pas d'optique de visée)</French>
+            <Spanish>Superviviente (25 % de munición, sin dispositivos ópticos)</Spanish>
+            <Italian>Sopravvissuto (25% munizioni, senza ottiche)</Italian>
+            <Polish>Ocalały (25% amunicji, brak przyrządów optycznych)</Polish>
+            <Russian>Выживший (25% боеприпасов, без оптики)</Russian>
+            <German>Überlebender (25 % Munition, kein Zielvisier)</German>
+            <Czech>Přežití (25 % munice, žádná optika)</Czech>
+            <English>Survivor (25% ammo, no optics)</English>
+            <Portuguese>Sobrevivente (25% de munição, sem mira ótica)</Portuguese>
+            <Korean>생존자(25% 탄약, 광학장치 없음)</Korean>
+            <Chinesesimp>幸存者（25% 弹药，无光学部件）</Chinesesimp>
+            <Japanese>サバイバー（弾薬 25%、照準器なし）</Japanese>
+            <Turkish>Kurtulan (%25 mühimmat, optik yok)</Turkish>
+          </Key>
+          <Key ID="str_hlg_escape_param_respawnloadouts02">
+            <Original>Limited (50% ammo, limited equipment)</Original>
+            <Chinese>準標準人員（50% 彈藥，裝備不齊）</Chinese>
+            <French>Limitée (50 % de munitions, équipement restreint)</French>
+            <Spanish>Limitado (50 % de munición, equipamiento limitado)</Spanish>
+            <Italian>Limitato (50% munizioni, equipaggiamento limitato)</Italian>
+            <Polish>Ograniczone (50% amunicji, ograniczone wyposażenie)</Polish>
+            <Russian>Ограниченный (50% боеприпасов, ограниченное снаряжение)</Russian>
+            <German>Eingeschränkt (50 % Munition, beschränkte Ausrüstung)</German>
+            <Czech>Omezené (50 % munice, omezené vybavení)</Czech>
+            <English>Limited (50% ammo, limited equipment)</English>
+            <Portuguese>Limitado (50% de munição, equipamentos limitados)</Portuguese>
+            <Korean>제한(50% 탄약, 제한된 장비)</Korean>
+            <Chinesesimp>限制（50% 弹药，有限装备）</Chinesesimp>
+            <Japanese>制限（弾薬 50%、装備限定）</Japanese>
+            <Turkish>Sınırlı (%50 mühimmat, sınırlı ekipman)</Turkish>
+          </Key>
+          <Key ID="str_hlg_escape_param_respawnloadouts01">
+            <Original>Standard (100% ammo, full equipment)</Original>
+            <Chinese>標準人員（100% 彈藥，裝備齊全）</Chinese>
+            <French>Normale (100 % de munitions, équipement complet)</French>
+            <Spanish>Normal (100 % de munición, todo el equipamiento)</Spanish>
+            <Italian>Standard (100% munizioni, equipaggiamento al completo)</Italian>
+            <Polish>Standardowe (100% amunicji, pełne wyposażenie)</Polish>
+            <Russian>Стандартный (100% боеприпасов, полное снаряжение)</Russian>
+            <German>Standard (100 % Munition, vollständige Ausrüstung)</German>
+            <Czech>Standardní (100 % munice, plné vybavení)</Czech>
+            <English>Standard (100% ammo, full equipment)</English>
+            <Portuguese>Padrão (100% de munição, equipamentos completos)</Portuguese>
+            <Korean>표준(100% 탄약, 전체 장비)</Korean>
+            <Chinesesimp>标准（100% 弹药，全部装备）</Chinesesimp>
+            <Japanese>標準（弾薬 100%、完全装備）</Japanese>
+            <Turkish>Standart (%100 mühimmat, eksiksiz ekipman)</Turkish>
+          </Key>
+          <Key ID="str_hlg_escape_param_respawnloadouts">
+            <Original>Respawn loadouts</Original>
+            <Chinese>重生加載武器</Chinese>
+            <French>Réapparitions des équipements</French>
+            <Spanish>Reaparición de conjuntos</Spanish>
+            <Italian>Equipaggiamenti alla riapparizione</Italian>
+            <Polish>Wyposażenie przy odrodzeniu</Polish>
+            <Russian>Комплекты экипировки при возрождении</Russian>
+            <German>Respawn-Ausrüstung</German>
+            <Czech>Vybavení při oživení</Czech>
+            <English>Respawn loadouts</English>
+            <Portuguese>Cargas de ressurgimento</Portuguese>
+            <Korean>물자 재투입</Korean>
+            <Chinesesimp>重生装备</Chinesesimp>
+            <Japanese>リスポーンロードアウト</Japanese>
+            <Turkish>Canlanma mühimmatları</Turkish>
+          </Key>
+          <Key ID="str_hlg_escape_param_respawnindividual10">
+            <Original>10 (for each player)</Original>
+            <Chinese>10（每名玩家）</Chinese>
+            <French>10 (pour chaque joueur)</French>
+            <Spanish>10 (por cada jugador)</Spanish>
+            <Italian>10 (per ogni giocatore)</Italian>
+            <Polish>10 (dla każdego gracza)</Polish>
+            <Russian>10 (для каждого игрока)</Russian>
+            <German>10 (für jeden Spieler)</German>
+            <Czech>10 (pro každého hráče)</Czech>
+            <English>10 (for each player)</English>
+            <Portuguese>10 (por jogador)</Portuguese>
+            <Korean>10(각 플레이어용)</Korean>
+            <Chinesesimp>10（每个玩家）</Chinesesimp>
+            <Japanese>10（各プレイヤー毎）</Japanese>
+            <Turkish>10 (her oyuncu için)</Turkish>
+          </Key>
+          <Key ID="str_hlg_escape_param_respawnindividual05">
+            <Original>5 (for each player)</Original>
+            <Chinese>5（每名玩家）</Chinese>
+            <French>5 (pour chaque joueur)</French>
+            <Spanish>5 (por cada jugador)</Spanish>
+            <Italian>5 (per ogni giocatore)</Italian>
+            <Polish>5 (dla każdego gracza)</Polish>
+            <Russian>5 (для каждого игрока)</Russian>
+            <German>5 (für jeden Spieler)</German>
+            <Czech>5 (pro každého hráče)</Czech>
+            <English>5 (for each player)</English>
+            <Portuguese>5 (por jogador)</Portuguese>
+            <Korean>5(각 플레이어용)</Korean>
+            <Chinesesimp>5（每个玩家）</Chinesesimp>
+            <Japanese>5（各プレイヤー毎）</Japanese>
+            <Turkish>5 (her oyuncu için)</Turkish>
+          </Key>
+          <Key ID="str_hlg_escape_param_respawnindividual04">
+            <Original>4 (for each player)</Original>
+            <Chinese>4（每名玩家）</Chinese>
+            <French>4 (pour chaque joueur)</French>
+            <Spanish>4 (por cada jugador)</Spanish>
+            <Italian>4 (per ogni giocatore)</Italian>
+            <Polish>4 (dla każdego gracza)</Polish>
+            <Russian>4 (для каждого игрока)</Russian>
+            <German>4 (für jeden Spieler)</German>
+            <Czech>4 (pro každého hráče)</Czech>
+            <English>4 (for each player)</English>
+            <Portuguese>4 (por jogador)</Portuguese>
+            <Korean>4(각 플레이어용)</Korean>
+            <Chinesesimp>4（每个玩家）</Chinesesimp>
+            <Japanese>4（各プレイヤー毎）</Japanese>
+            <Turkish>4 (her oyuncu için)</Turkish>
+          </Key>
+          <Key ID="str_hlg_escape_param_respawnindividual03">
+            <Original>3 (for each player)</Original>
+            <Chinese>3（每名玩家）</Chinese>
+            <French>3 (pour chaque joueur)</French>
+            <Spanish>3 (por cada jugador)</Spanish>
+            <Italian>3 (per ogni giocatore)</Italian>
+            <Polish>3 (dla każdego gracza)</Polish>
+            <Russian>3 (для каждого игрока)</Russian>
+            <German>3 (für jeden Spieler)</German>
+            <Czech>3 (pro každého hráče)</Czech>
+            <English>3 (for each player)</English>
+            <Portuguese>3 (por jogador)</Portuguese>
+            <Korean>3(각 플레이어용)</Korean>
+            <Chinesesimp>3（每个玩家）</Chinesesimp>
+            <Japanese>3（各プレイヤー毎）</Japanese>
+            <Turkish>3 (her oyuncu için)</Turkish>
+          </Key>
+          <Key ID="str_hlg_escape_param_respawnindividual02">
+            <Original>2 (for each player)</Original>
+            <Chinese>2（每名玩家）</Chinese>
+            <French>2 (pour chaque joueur)</French>
+            <Spanish>2 (por cada jugador)</Spanish>
+            <Italian>2 (per ogni giocatore)</Italian>
+            <Polish>2 (dla każdego gracza)</Polish>
+            <Russian>2 (для каждого игрока)</Russian>
+            <German>2 (für jeden Spieler)</German>
+            <Czech>2 (pro každého hráče)</Czech>
+            <English>2 (for each player)</English>
+            <Portuguese>2 (por jogador)</Portuguese>
+            <Korean>2(각 플레이어용)</Korean>
+            <Chinesesimp>2（每个玩家）</Chinesesimp>
+            <Japanese>2（各プレイヤー毎）</Japanese>
+            <Turkish>2 (her oyuncu için)</Turkish>
+          </Key>
+          <Key ID="str_hlg_escape_param_respawnindividual01">
+            <Original>1 (for each player)</Original>
+            <Chinese>1（每名玩家）</Chinese>
+            <French>1 (pour chaque joueur)</French>
+            <Spanish>1 (por cada jugador)</Spanish>
+            <Italian>1 (per ogni giocatore)</Italian>
+            <Polish>1 (dla każdego gracza)</Polish>
+            <Russian>1 (для каждого игрока)</Russian>
+            <German>1 (für jeden Spieler)</German>
+            <Czech>1 (pro každého hráče)</Czech>
+            <English>1 (for each player)</English>
+            <Portuguese>1 (por jogador)</Portuguese>
+            <Korean>1(각 플레이어용)</Korean>
+            <Chinesesimp>1（每个玩家）</Chinesesimp>
+            <Japanese>1（各プレイヤー毎）</Japanese>
+            <Turkish>1 (her oyuncu için)</Turkish>
+          </Key>
+          <Key ID="str_hlg_escape_param_respawngroup50">
+            <Original>50 (for group)</Original>
+            <Chinese>50（團隊）</Chinese>
+            <French>50 (par groupe)</French>
+            <Spanish>50 (por grupo)</Spanish>
+            <Italian>50 (per gruppo)</Italian>
+            <Polish>50 (dla grupy)</Polish>
+            <Russian>50 (для группы)</Russian>
+            <German>50 (für die Gruppe)</German>
+            <Czech>50 (pro skupinu)</Czech>
+            <English>50 (for group)</English>
+            <Portuguese>50 (por grupo)</Portuguese>
+            <Korean>50(그룹용)</Korean>
+            <Chinesesimp>50（团队）</Chinesesimp>
+            <Japanese>50（グループ全体）</Japanese>
+            <Turkish>50 (grup için)</Turkish>
+          </Key>
+          <Key ID="str_hlg_escape_param_respawngroup40">
+            <Original>40 (for group)</Original>
+            <Chinese>40（團隊）</Chinese>
+            <French>40 (par groupe)</French>
+            <Spanish>40 (por grupo)</Spanish>
+            <Italian>40 (per gruppo)</Italian>
+            <Polish>40 (dla grupy)</Polish>
+            <Russian>40 (для группы)</Russian>
+            <German>40 (für die Gruppe)</German>
+            <Czech>40 (pro skupinu)</Czech>
+            <English>40 (for group)</English>
+            <Portuguese>40 (por grupo)</Portuguese>
+            <Korean>40(그룹용)</Korean>
+            <Chinesesimp>40（团队）</Chinesesimp>
+            <Japanese>40（グループ全体）</Japanese>
+            <Turkish>40 (grup için)</Turkish>
+          </Key>
+          <Key ID="str_hlg_escape_param_respawngroup30">
+            <Original>30 (for group)</Original>
+            <Chinese>30（團隊）</Chinese>
+            <French>30 (par groupe)</French>
+            <Spanish>30 (por grupo)</Spanish>
+            <Italian>30 (per gruppo)</Italian>
+            <Polish>30 (dla grupy)</Polish>
+            <Russian>30 (для группы)</Russian>
+            <German>30 (für die Gruppe)</German>
+            <Czech>30 (pro skupinu)</Czech>
+            <English>30 (for group)</English>
+            <Portuguese>30 (por grupo)</Portuguese>
+            <Korean>30(그룹용)</Korean>
+            <Chinesesimp>30（团队）</Chinesesimp>
+            <Japanese>30（グループ全体）</Japanese>
+            <Turkish>30 (grup için)</Turkish>
+          </Key>
+          <Key ID="str_hlg_escape_param_respawngroup20">
+            <Original>20 (for group)</Original>
+            <Chinese>20（團隊）</Chinese>
+            <French>20 (par groupe)</French>
+            <Spanish>20 (por grupo)</Spanish>
+            <Italian>20 (per gruppo)</Italian>
+            <Polish>20 (dla grupy)</Polish>
+            <Russian>20 (для группы)</Russian>
+            <German>20 (für die Gruppe)</German>
+            <Czech>20 (pro skupinu)</Czech>
+            <English>20 (for group)</English>
+            <Portuguese>20 (por grupo)</Portuguese>
+            <Korean>20(그룹용)</Korean>
+            <Chinesesimp>20（团队）</Chinesesimp>
+            <Japanese>20（グループ全体）</Japanese>
+            <Turkish>20 (grup için)</Turkish>
+          </Key>
+          <Key ID="str_hlg_escape_param_respawngroup100">
+            <Original>100 (for group)</Original>
+            <Chinese>100（團隊）</Chinese>
+            <French>100 (par groupe)</French>
+            <Spanish>100 (por grupo)</Spanish>
+            <Italian>100 (per gruppo)</Italian>
+            <Polish>100 (dla grupy)</Polish>
+            <Russian>100 (для группы)</Russian>
+            <German>100 (für die Gruppe)</German>
+            <Czech>100 (pro skupinu)</Czech>
+            <English>100 (for group)</English>
+            <Portuguese>100 (por grupo)</Portuguese>
+            <Korean>100(그룹용)</Korean>
+            <Chinesesimp>100（团队）</Chinesesimp>
+            <Japanese>100（グループ全体）</Japanese>
+            <Turkish>100 (grup için)</Turkish>
+          </Key>
+          <Key ID="str_hlg_escape_param_respawngroup10">
+            <Original>10 (for group)</Original>
+            <Chinese>10（團隊）</Chinese>
+            <French>10 (par groupe)</French>
+            <Spanish>10 (por grupo)</Spanish>
+            <Italian>10 (per gruppo)</Italian>
+            <Polish>10 (dla grupy)</Polish>
+            <Russian>10 (для группы)</Russian>
+            <German>10 (für die Gruppe)</German>
+            <Czech>10 (pro skupinu)</Czech>
+            <English>10 (for group)</English>
+            <Portuguese>10 (por grupo)</Portuguese>
+            <Korean>10(그룹용)</Korean>
+            <Chinesesimp>10（团队）</Chinesesimp>
+            <Japanese>10（グループ全体）</Japanese>
+            <Turkish>10 (grup için)</Turkish>
+          </Key>
+          <Key ID="str_hlg_escape_param_fubarstay">
+            <Original>Stay inside</Original>
+            <Chinese>留在內部</Chinese>
+            <French>restent à bord.</French>
+            <Spanish>Quedarse dentro</Spanish>
+            <Italian>Resteranno dentro</Italian>
+            <Polish>Zostaną w środku</Polish>
+            <Russian>Останется внутри</Russian>
+            <German>Drinnen bleiben</German>
+            <Czech>zůstanou uvnitř</Czech>
+            <English>Stay inside</English>
+            <Portuguese>Ficar</Portuguese>
+            <Korean>내부에 머물기</Korean>
+            <Chinesesimp>呆在里面</Chinesesimp>
+            <Japanese>車内に残る</Japanese>
+            <Turkish>İçeride kal</Turkish>
+          </Key>
+          <Key ID="str_hlg_escape_param_fubarleave">
+            <Original>Get out</Original>
+            <Chinese>離開</Chinese>
+            <French>sortent.</French>
+            <Spanish>Salir</Spanish>
+            <Italian>Usciranno</Italian>
+            <Polish>Wyjdą</Polish>
+            <Russian>Покинет технику</Russian>
+            <German>Aussteigen</German>
+            <Czech>vystoupí</Czech>
+            <English>Get out</English>
+            <Portuguese>Sair</Portuguese>
+            <Korean>나가기</Korean>
+            <Chinesesimp>出去</Chinesesimp>
+            <Japanese>外へ出る</Japanese>
+            <Turkish>İn</Turkish>
+          </Key>
+          <Key ID="str_hlg_escape_param_fubar">
+            <Original>Crews of immobilized enemy vehicles will</Original>
+            <Chinese>敵方載具動彈不得時，其中的人員將</Chinese>
+            <French>Les équipages des véhicules immobilisés</French>
+            <Spanish>Tripulación de los vehículos enemigos inmovilizados:</Spanish>
+            <Italian>Gli equipaggi dei veicoli nemici immobilizzati</Italian>
+            <Polish>Załogi unieruchomionych pojazdów przeciwnika</Polish>
+            <Russian>Экипаж нейтрализованной вражеской техники</Russian>
+            <German>Die Besatzung von bewegungsunfähigen Fahrzeugen wird</German>
+            <Czech>Posádky znehybněných nepřátelských vozidel</Czech>
+            <English>Crews of immobilized enemy vehicles will</English>
+            <Portuguese>As equipes de veículos inimigos imobilizados irão</Portuguese>
+            <Korean>기동 불가 적군 차량의 승무원이 ~할 예정.</Korean>
+            <Chinesesimp>失去机动性的敌军载具的乘员将</Chinesesimp>
+            <Japanese>行動不能になった敵車両の乗員は</Japanese>
+            <Turkish>Hareketsiz hale getirilen düşman araçlarının mürettebatları</Turkish>
+          </Key>
+          <Key ID="str_hlg_escape_param_enemysupportson">
+            <Original>Enabled (artillery and air support)</Original>
+            <Chinese>開啟（砲擊與空中支援）</Chinese>
+            <French>Activé (artillerie et soutien aérien)</French>
+            <Spanish>Activado (artillería y apoyo aéreo)</Spanish>
+            <Italian>Abilitato (artiglieria e supporto aereo)</Italian>
+            <Polish>Włączone (artyleria i wsparcie z powietrza)</Polish>
+            <Russian>Включено (артиллерийская и авиационная поддержка)</Russian>
+            <German>Aktiviert (Artillerie und Luftunterstützung)</German>
+            <Czech>Povolené (dělostřelectvo a vzdušná podpora)</Czech>
+            <English>Enabled (artillery and air support)</English>
+            <Portuguese>Capacitado (artilharia e suporte aéreo)</Portuguese>
+            <Korean>실행됨(포병과 항공 지원)</Korean>
+            <Chinesesimp>已启用（火炮和空中支援）</Chinesesimp>
+            <Japanese>有効（火砲および航空支援）</Japanese>
+            <Turkish>Etkin (ağır silah ve hava desteği)</Turkish>
+          </Key>
+          <Key ID="str_hlg_escape_param_enemysupports">
+            <Original>Enemy supports</Original>
+            <Chinese>敵方援軍</Chinese>
+            <French>Soutien ennemi</French>
+            <Spanish>Apoyo enemigo</Spanish>
+            <Italian>Supporti nemici</Italian>
+            <Polish>Wsparcie przeciwnika</Polish>
+            <Russian>Вражеская поддержка</Russian>
+            <German>Feinde - Unterstützung</German>
+            <Czech>Nepřátelská podpora</Czech>
+            <English>Enemy supports</English>
+            <Portuguese>Suporte do inimigo</Portuguese>
+            <Korean>적군 지원</Korean>
+            <Chinesesimp>敌军支援</Chinesesimp>
+            <Japanese>敵側支援</Japanese>
+            <Turkish>Düşman destekleri</Turkish>
+          </Key>
+          <Key ID="str_hlg_escape_param_enemyequipment02">
+            <Original>Limited (limited ammo and equipment)</Original>
+            <Chinese>準標準人員（彈藥與裝備不齊）</Chinese>
+            <French>Limité (munitions et équipement restreints)</French>
+            <Spanish>Limitado (munición y equipamiento limitado)</Spanish>
+            <Italian>Limitato (munizioni ed equipaggiamento limitati)</Italian>
+            <Polish>Ograniczone (ograniczona amunicja i wyposażenie)</Polish>
+            <Russian>Ограниченное (ограниченные боеприпасы и снаряжение)</Russian>
+            <German>Beschränkt (eingeschränkte Munition und Ausrüstung)</German>
+            <Czech>Omezené (50 % munice, omezené vybavení)</Czech>
+            <English>Limited (limited ammo and equipment)</English>
+            <Portuguese>Limitado (munição e equipamentos limitados)</Portuguese>
+            <Korean>제한(제한된 탄약과 장비)</Korean>
+            <Chinesesimp>有限（有限弹药和装备）</Chinesesimp>
+            <Japanese>制限（弾薬および装備限定）</Japanese>
+            <Turkish>Sınırlı (sınırlı mühimmat, ekipman)</Turkish>
+          </Key>
+          <Key ID="str_hlg_escape_param_enemyequipment01">
+            <Original>Standard (full ammo and equipment)</Original>
+            <Chinese>標準人員（彈藥與裝備齊全）</Chinese>
+            <French>Normal (munitions et équipement complets)</French>
+            <Spanish>Normal (munición y equipamiento completo)</Spanish>
+            <Italian>Standard (munizioni ed equipaggiamento al completo)</Italian>
+            <Polish>Standardowe (pełna amunicja i wyposażenie)</Polish>
+            <Russian>Стандартное (полные боеприпасы и снаряжение)</Russian>
+            <German>Standard (vollständige Munition und Ausrüstung)</German>
+            <Czech>Standardní (100 % munice, plné vybavení)</Czech>
+            <English>Standard (full ammo and equipment)</English>
+            <Portuguese>Padrão (munição e equipamentos completos)</Portuguese>
+            <Korean>표준(전체 탄약과 장비)</Korean>
+            <Chinesesimp>标准（全部弹药和装备）</Chinesesimp>
+            <Japanese>標準（弾薬満タン・完全装備）</Japanese>
+            <Turkish>Standart (eksiksiz mühimmat ve ekipman)</Turkish>
+          </Key>
+          <Key ID="str_hlg_escape_param_enemyequipment">
+            <Original>Enemy equipment</Original>
+            <Chinese>敵方裝備</Chinese>
+            <French>Équipement ennemi</French>
+            <Spanish>Equipamiento enemigo</Spanish>
+            <Italian>Equipaggiamento nemico</Italian>
+            <Polish>Wyposażenie przeciwnika</Polish>
+            <Russian>Вражеское снаряжение</Russian>
+            <German>Feinde - Ausrüstung</German>
+            <Czech>Nepřátelské vybavení</Czech>
+            <English>Enemy equipment</English>
+            <Portuguese>Equipamentos do inimigo</Portuguese>
+            <Korean>적군 장비</Korean>
+            <Chinesesimp>敌军装备</Chinesesimp>
+            <Japanese>敵側装備</Japanese>
+            <Turkish>Düşman ekipmanı</Turkish>
+          </Key>
+          <Key ID="str_hlg_escapefromchernarus_tskescapetitle">
+            <Original>Escape from Chernarus Kolhoz</Original>
+            <Chinese>Escape from Chernarus Kolhoz</Chinese>
+            <French>Escape from Chernarus Kolhoz</French>
+            <Spanish>Escape from Chernarus Kolhoz</Spanish>
+            <Italian>Escape from Chernarus Kolhoz</Italian>
+            <Polish>Escape from Chernarus Kolhoz</Polish>
+            <Russian>Escape from Chernarus Kolhoz</Russian>
+            <German>Escape from Chernarus Kolhoz</German>
+            <Czech>Escape from Chernarus Kolhoz</Czech>
+            <English>Escape from Chernarus Kolhoz</English>
+            <Portuguese>Escape from Chernarus Kolhoz</Portuguese>
+            <Korean>Escape from Chernarus Kolhoz</Korean>
+            <Chinesesimp>Escape from Chernarus Kolhoz</Chinesesimp>
+            <Japanese>Escape from Chernarus Kolhoz</Japanese>
+            <Turkish>Escape from Chernarus Kolhoz</Turkish>
+          </Key>
+          <Key ID="str_hlg_escapefromchernarus_tskescapedesc">
+            <Original>Search for a boat, helicopter, or plane in enemy territory and escape, leaving no man behind.</Original>
+            <Chinese>在敵方領土尋找船隻、直升機或飛機以便逃離，別留下任何弟兄。</Chinese>
+            <French>Tentez de vous échapper du territoire ennemi avec un bateau, un hélicoptère ou un avion, et ramenez tous vos hommes.</French>
+            <Spanish>Buscad un barco, un helicóptero o un avión en territorio enemigo y escapad sin dejar a nadie atrás.</Spanish>
+            <Italian>Vai alla ricerca di una nave, di un elicottero o di un aeroplano nel territorio nemico e fuggi senza abbandonare nessuno.</Italian>
+            <Polish>Znajdź łódź, śmigłowiec lub samolot na terytorium przeciwnika i ucieknij razem z całą grupą.</Polish>
+            <Russian>Найдите лодку, вертолет или самолет на территории противника и выберетесь с острова в полном составе.</Russian>
+            <German>Sucht nach einem Boot, einem Helikopter oder einem Flugzeug im Feindgebiet und entkommt, ohne jemanden zurückzulassen.</German>
+            <Czech>Najděte na nepřátelském území člun, vrtulník nebo letadlo a v plném počtu unikněte.</Czech>
+            <English>Search for a boat, helicopter, or plane in enemy territory and escape, leaving no man behind.</English>
+            <Portuguese>Procure um barco, um helicóptero ou um avião no território inimigo e fuja sem deixar ninguém para trás.</Portuguese>
+            <Korean>적의 진영에서 보트, 헬리콥터나 비행기를 탐색하고 모든 조원을 남기지 않고 탈출하라.</Korean>
+            <Chinesesimp>在敌占区找到小艇、直升机或飞机，然后逃离，不落下一个人。</Chinesesimp>
+            <Japanese>敵領内でボート、ヘリコプター、もしくは飛行機を見つけ、これに乗って脱出せよ。置き去りは無し。</Japanese>
+            <Turkish>Düşman bölgesinde bir bot, helikopter veya uçak ara ve ardında hiç adam bırakmadan kaç.</Turkish>
+          </Key>
+          <Key ID="str_hlg_escapefromchernarus_respawnvillage">
+            <Original>Village</Original>
+            <Russian>Деревня</Russian>
+          </Key>
+          <Key ID="str_hlg_escapefromchernarus_overview">
+            <Original>Escape from Chernarus by any means possible.</Original>
+            <Russian>Выберитесь из Черноруссии любым способом.</Russian>
+          </Key>
+          <Key ID="str_hlg_escapefromchernarus_onloadname">
+            <Original>Escape from Chernarus Kolhoz</Original>
+            <Chinese>Escape from Chernarus Kolhoz</Chinese>
+            <French>Escape from Chernarus Kolhoz</French>
+            <Spanish>Escape from Chernarus Kolhoz</Spanish>
+            <Italian>Escape from Chernarus Kolhoz</Italian>
+            <Polish>Escape from Chernarus Kolhoz</Polish>
+            <Russian>Escape from Chernarus Kolhoz</Russian>
+            <German>Escape from Chernarus Kolhoz</German>
+            <Czech>Escape from Chernarus Kolhoz</Czech>
+            <English>Escape from Chernarus Kolhoz</English>
+            <Portuguese>Escape from Chernarus Kolhoz</Portuguese>
+            <Korean>Escape from Chernarus Kolhoz</Korean>
+            <Chinesesimp>Escape from Chernarus Kolhoz</Chinesesimp>
+            <Japanese>Escape from Chernarus Kolhoz</Japanese>
+            <Turkish>Escape from Chernarus Kolhoz</Turkish>
+          </Key>
+          <Key ID="str_hlg_escapefromchernarus_missionname">
+            <Original>Escape 10 Chernarus Kolhoz</Original>
+            <Chinese>Escape 10 Chernarus Kolhoz</Chinese>
+            <French>Escape 10 Chernarus Kolhoz</French>
+            <Spanish>Escape 10 Chernarus Kolhoz</Spanish>
+            <Italian>Escape 10 Chernarus Kolhoz</Italian>
+            <Polish>Escape 10 Chernarus Kolhoz</Polish>
+            <Russian>Escape 10 Chernarus Kolhoz</Russian>
+            <German>Escape 10 Chernarus Kolhoz</German>
+            <Czech>Escape 10 Chernarus Kolhoz</Czech>
+            <English>Escape 10 Chernarus Kolhoz</English>
+            <Portuguese>Escape 10 Chernarus Kolhoz</Portuguese>
+            <Korean>Escape 10 Chernarus Kolhoz</Korean>
+            <Chinesesimp>Escape 10 Chernarus Kolhoz</Chinesesimp>
+            <Japanese>Escape 10 Chernarus Kolhoz</Japanese>
+            <Turkish>Escape 10 Chernarus Kolhoz</Turkish>
+          </Key>
+          <Key ID="str_hlg_escapefromchernarus_execution03">
+            <Original>Checkpoints and other areas of interest have been marked on your map. They could be viable targets if you need to scavenge supplies.&lt;br /&gt;&lt;br /&gt;Good luck and stay alive.</Original>
+            <Chinese>你的地圖上標記了管制哨和其他值得注意的地區。你想找些補給品的話，可以考慮那邊。&lt;br /&gt;&lt;br /&gt;祝好運，活下去吧。</Chinese>
+            <French>Les points de contrôle et autres zones importantes sont marqués sur la carte. S'il vous faut du matériel, c'est là qu'il faut chercher.&lt;br /&gt;&lt;br /&gt;Bonne chance. Restez en vie.</French>
+            <Spanish>Los puntos de control y las demás zonas de interés se han marcado en el mapa. Si necesitáis conseguir suministros, os podrán resultar útiles.&lt;br /&gt;&lt;br /&gt;Buena suerte y regresad con vida.</Spanish>
+            <Italian>I checkpoint e le altre zone di interesse sono state segnate sulla mappa. Possono trattarsi di obiettivi vitali nel caso in cui tu abbia bisogno di risorse.&lt;br /&gt;&lt;br /&gt;Buona fortuna e resta in vita.</Italian>
+            <Polish>Na Twojej mapie oznaczono punkty kontrolne i charakterystyczne miejsca. Możesz spróbować zdobyć w nich zaopatrzenie.&lt;br /&gt;&lt;br /&gt;Powodzenia! Uważaj na siebie.</Polish>
+            <Russian>На вашей карте отмечены контрольно-пропускные пункты и другие области, представляющие интерес. Они могут быть подходящими целями, если вам нужно раздобыть припасы.&lt;br /&gt;&lt;br /&gt;Удачи и будьте осторожны.</Russian>
+            <German>Checkpoints und andere wichtige Orte wurden auf eurer Karte markiert. Sie könnten wichtige Ziele darstellen, wenn ihr nach Versorgungsgütern sucht.&lt;br/&gt;&lt;br/&gt;Viel Glück und bleibt am Leben!</German>
+            <Czech>Na vaší mapě byly označeny kontrolní stanoviště a další zajímavá místa. Může jít o vhodné cíle, kde si můžete doplnit zásoby.&lt;br /&gt;&lt;br /&gt;Hodně štěstí a nenechte se zabít.</Czech>
+            <English>Checkpoints and other areas of interest have been marked on your map. They could be viable targets if you need to scavenge supplies.&lt;br /&gt;&lt;br /&gt;Good luck and stay alive.</English>
+            <Portuguese>Os pontos de controle e outras áreas de interesse foram marcados no seu mapa. Eles podem ser alvos viáveis se você precisar vasculhar em busca de suprimentos.&lt;br /&gt;&lt;br /&gt;Boa sorte e fique vivo.</Portuguese>
+            <Korean>체크포인트(검문소)와 다른 관심 지역이 지도에 표시되었다. 보금품을 찾아야 한다면 실행 가능한 표적일 수 있다.&lt;br /&gt;&lt;br /&gt;행운을 빈다. 잘 버티길.</Korean>
+            <Chinesesimp>关卡和其他重要区域已经在您的地图上标出。如果需要掠夺军需，这些地方是可行的目标。&lt;br /&gt;&lt;br /&gt;祝您好运，活着回来。</Chinesesimp>
+            <Japanese>マップ上には検問所ならびにその他特定の地点がマーキングされている。物資収集の必要がある場合はターゲットとしての検討の余地あり。&lt;br /&gt;&lt;br /&gt;グッドラック、そして生き残れ。</Japanese>
+            <Turkish>Kontrol noktaları ve diğer önemli alanlar haritanda işaretlendi. İkmal malzemeleri bulman gerekirse uygun hedefler olabilirler.&lt;br /&gt;&lt;br /&gt;İyi şanslar ve hayatta kal.</Turkish>
+          </Key>
+          <Key ID="str_hlg_escapefromchernarus_execution02">
+            <Original>Commandeer a boat, helicopter, or plane and use it to evacuate. It would be a good idea to search the ports in %5Chernogorsk%1,%6Electrozavodsk%1. There's also also take a helicopter on the %4Skalytiy Island%1.Note airports %3Krasnostav%1 and %2NW%1. Plan carefully, however. The enemy have a strong presence at each of these locations.</Original>
+            <Russian>Угоните лодку, вертолет или самолет и используйте их для эвакуации. Было бы неплохо осмотреть  порты в %5Черногорске%1, %6Электрозаводске%1. Вы также можете воспользоваться вертолетом на %4острове Скалистый%1. Обратите внимание на аэропорты %3Красностав%1 и %2Северо-Западный%1. Однако планируйте все тщательно. В этих местах наблюдаются крупные скопления вражеских войск.</Russian>
+          </Key>
+          <Key ID="str_hlg_escapefromchernarus_execution01">
+            <Original>You've got to find a way off this island.</Original>
+            <Chinese>你得想辦法離開這座島嶼。</Chinese>
+            <French>Vous devez trouver un moyen de fuir cette île.</French>
+            <Spanish>Hay que buscar un modo de salir de esta isla.</Spanish>
+            <Italian>Devi trovare un modo per andartene da quest'isola.</Italian>
+            <Polish>Musisz znaleźć drogę ucieczki z wyspy.</Polish>
+            <Russian>Вам нужно найти способ выбраться с этого острова.</Russian>
+            <German>Ihr müsst einen Weg von dieser Insel finden.</German>
+            <Czech>Musíte najít nějaký způsob, jak z ostrova uniknout.</Czech>
+            <English>You've got to find a way off this island.</English>
+            <Portuguese>Você precisa achar uma saída desta ilha.</Portuguese>
+            <Korean>이 섬을 탈출하는 방법을 찾을 수 있을 거다.</Korean>
+            <Chinesesimp>你得找到逃离这座小岛的方法。</Chinesesimp>
+            <Japanese>この島から脱出する方法を見つけ出さなければならない。</Japanese>
+            <Turkish>Bu adadan ayrılmanın bir yolunu bulmalısın.</Turkish>
+          </Key>
+          <Key ID="str_hlg_escapefromchernarus_end03sub">
+            <Original>Too many casualties...</Original>
+            <Chinese>傷亡太慘重了……</Chinese>
+            <French>Trop de victimes...</French>
+            <Spanish>Demasiadas bajas...</Spanish>
+            <Italian>Troppe vittime…</Italian>
+            <Polish>Zbyt duże straty…</Polish>
+            <Russian>Слишком много жертв...</Russian>
+            <German>Zu viele Verluste …</German>
+            <Czech>Příliš velké ztráty...</Czech>
+            <English>Too many casualties...</English>
+            <Portuguese>Baixas demais…</Portuguese>
+            <Korean>사상자가 너무 많다...</Korean>
+            <Chinesesimp>太多伤亡...</Chinesesimp>
+            <Japanese>犠牲が多すぎた…</Japanese>
+            <Turkish>Çok fazla kayıp var...</Turkish>
+          </Key>
+          <Key ID="str_hlg_escapefromchernarus_end03desc">
+            <Original>Your entire team has been killed in action.</Original>
+            <Chinese>所有隊員都在行動中陣亡了。</Chinese>
+            <French>Tous vos équipiers ont été tués au combat.</French>
+            <Spanish>Todo el equipo ha muerto en combate.</Spanish>
+            <Italian>La tua intera squadra è stata uccisa in combattimento.</Italian>
+            <Polish>Cała Twoja drużyna zginęła w walce.</Polish>
+            <Russian>Вся ваша команда была убита в бою.</Russian>
+            <German>Euer gesamtes Team wurde im Einsatz getötet.</German>
+            <Czech>Váš celý tým byl zabit v akci.</Czech>
+            <English>Your entire team has been killed in action.</English>
+            <Portuguese>Toda a sua equipe foi morta em ação.</Portuguese>
+            <Korean>팀 전원이 작전 중 사망했다.</Korean>
+            <Chinesesimp>行动中你们整个小组都被杀死了。</Chinesesimp>
+            <Japanese>貴官のチーム全員が戦闘中に死亡した。</Japanese>
+            <Turkish>Takımının tamamı savaşta öldürüldü.</Turkish>
+          </Key>
+          <Key ID="str_hlg_escapefromchernarus_end02sub">
+            <Original>Out of options...</Original>
+            <Chinese>走投無路……</Chinese>
+            <French>Plus d'options...</French>
+            <Spanish>No quedan opciones...</Spanish>
+            <Italian>Non hai più possibilità…</Italian>
+            <Polish>Brak opcji…</Polish>
+            <Russian>Других вариантов нет...</Russian>
+            <German>Es gibt keine Fluchtmöglichkeit mehr …</German>
+            <Czech>Nezbývají žádné možnosti...</Czech>
+            <English>Out of options...</English>
+            <Portuguese>Sem opções…</Portuguese>
+            <Korean>선택이 없다...</Korean>
+            <Chinesesimp>走投无路了...</Chinesesimp>
+            <Japanese>もはや選択肢は無い…</Japanese>
+            <Turkish>Seçenek kalmadı...</Turkish>
+          </Key>
+          <Key ID="str_hlg_escapefromchernarus_end02desc">
+            <Original>All possible means of escape have been destroyed.</Original>
+            <Chinese>能用來逃離的方式都沒了。</Chinese>
+            <French>Tous les moyens de locomotion ont été détruits.</French>
+            <Spanish>Se han destruido todos los medios de huida posibles.</Spanish>
+            <Italian>Tutti i modi possibili per fuggire sono stati distrutti.</Italian>
+            <Polish>Wszystkie środki transportu zostały zniszczone.</Polish>
+            <Russian>Все возможные способы побега были уничтожены.</Russian>
+            <German>Alle möglichen Fluchtfahrzeuge wurden zerstört.</German>
+            <Czech>Všechny prostředky, pomocí kterých jste mohli uniknout, byly zničeny.</Czech>
+            <English>All possible means of escape have been destroyed.</English>
+            <Portuguese>Todas as formas de escapar foram destruídas.</Portuguese>
+            <Korean>모든 실행가능한 탈출 수단이 파괴됐다.</Korean>
+            <Chinesesimp>所有可能的逃离方式都被破坏了。</Chinesesimp>
+            <Japanese>脱出するためのすべての手段が破壊されてしまった。</Japanese>
+            <Turkish>Tüm olası kaçış yolları yok edildi.</Turkish>
+          </Key>
+          <Key ID="str_hlg_escapefromchernarus_end01desc">
+            <Original>Against all odds, you managed to escape from Chernarus. Great work!</Original>
+            <Russian>Несмотря ни на что, вам удалось сбежать из Черноруссии. Отличная работа!</Russian>
+          </Key>
+          <Key ID="STR_hlg_escape_marker_base">
+            <Original>CSAT base</Original>
+            <Chinese>CSAT 基地</Chinese>
+            <French>Base du CSAT</French>
+            <Spanish>Base del CSAT</Spanish>
+            <Italian>Base CSAT</Italian>
+            <Polish>Baza CSAT</Polish>
+            <Russian>База CSAT</Russian>
+            <German>CSAT-Basis</German>
+            <Czech>Základna CSAT</Czech>
+            <English>CSAT base</English>
+            <Portuguese>Base da CSAT</Portuguese>
+            <Korean>CSAT 베이스</Korean>
+            <Chinesesimp>CSAT 基地</Chinesesimp>
+            <Japanese>CSAT 基地</Japanese>
+            <Turkish>CSAT üssü</Turkish>
+          </Key>
+          <Key ID="STR_hlg_escape_marker_checkpoint">
+            <Original>Checkpoint</Original>
+            <Chinese>管制哨</Chinese>
+            <French>Point de contrôle</French>
+            <Spanish>Punto de control</Spanish>
+            <Italian>Checkpoint</Italian>
+            <Polish>Punkt kontrolny</Polish>
+            <Russian>КПП</Russian>
+            <German>Checkpoint</German>
+            <Czech>Kontrolní stanoviště</Czech>
+            <English>Checkpoint</English>
+            <Portuguese>Ponto de controle</Portuguese>
+            <Korean>체크포인트</Korean>
+            <Chinesesimp>关卡</Chinesesimp>
+            <Japanese>検問所</Japanese>
+            <Turkish>Kontrol Noktası</Turkish>
+          </Key>
+          <Key ID="STR_hlg_escape_marker_depot">
+            <Original>Syndikat depot</Original>
+            <Chinese>Syndikat 儲藏庫</Chinese>
+            <French>Dépôt du Syndikat</French>
+            <Spanish>Terminal del Syndikat</Spanish>
+            <Italian>Magazzino Syndikat</Italian>
+            <Polish>Skład Syndikatu</Polish>
+            <Russian>Склад Syndikat</Russian>
+            <German>Syndikat-Lager</German>
+            <Czech>Skladiště Syndikatu</Czech>
+            <English>Syndikat depot</English>
+            <Portuguese>Galpão do Syndikat</Portuguese>
+            <Korean>Syndikat 기지</Korean>
+            <Chinesesimp>Syndikat 兵站</Chinesesimp>
+            <Japanese>Syndikat 物資集積所</Japanese>
+            <Turkish>Syndikat deposu</Turkish>
+          </Key>
+		  </Key>
+          <Key ID="STR_hlg_Helgust">
+            <Original>Helgustt</Original>
+            <Chinese>Helgust</Chinese>
+            <French>Helgust</French>
+            <Spanish>Helgust</Spanish>
+            <Italian>Helgust</Italian>
+            <Polish>Helgust</Polish>
+            <Russian>Helgust</Russian>
+            <German>Helgust</German>
+            <Czech>Helgust</Czech>
+            <English>Helgust</English>
+            <Portuguese>Helgust</Portuguese>
+            <Korean>Helgust</Korean>
+            <Chinesesimp>Helgust</Chinesesimp>
+            <Japanese>Helgust</Japanese>
+            <Turkish>Helgust</Turkish>
+          </Key>
+        </Container>
+		<Container name="Another Container">
+			<Key ID="STR_TAG_formatted">
+				<Original>Hello, %1.</Original>
+			</Key>
+			<Key ID="STR_TAG_structuredText">
+				<Original>Some text &lt;t color='%1'&gt;%2&lt;/t&gt;</Original>
+			</Key>
+		</Container>
+	</Package>
+</Project>
