@@ -35,7 +35,7 @@ AVBD_randomhordeminspawndist=150;
 AVBD_randomhordemaxspawndist=450;
 
 //Minimum and maximum number of zombies in a random horde
-AVBD_randomhordeminamount=1;
+AVBD_randomhordeminamount=10;
 AVBD_randomhordemaxamount=40;
 
 //Groups reserved for hordes - allows hordes to spawn in very crowded areas
@@ -45,8 +45,10 @@ AVBD_hordereservedgroups=80;
 AVBD_zombiebandagechance=0.04;
 
 //Debug mode - show markers for prepared positions and active zombies
-AVBD_debug=false;
+AVBD_debug=true;
 
 [1,["auldale",0,323,0.35],["Fallout",0,207,0.35],["cradle",0,367,0.35],["kurshok",0,210,0.35],["pavelock",0,121,0.35],["oldquarter",0,257,0.35],["Wasteland",0,195,0.35]] execVM "cly_jukebox.sqf";
 
 _light = [] execVM "light.sqf";
+
+setWind [-2,2,true];

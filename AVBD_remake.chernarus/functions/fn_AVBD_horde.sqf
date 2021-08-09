@@ -1,5 +1,5 @@
 /*
-Create Syndikat group and let it stalk players - as they are spawned in jungle, set aimingAccuracy to very low
+Create Horde of zombies to stalk players
 */
 
 // Params
@@ -57,9 +57,20 @@ if (_event == "Horde") then
 	_marker setMarkerColor "ColorRed";
 	_marker setMarkerSize [1,1];
 
-	_newGrp = grpNull;
-	// TODO make it depends from dynamic _amount 
-	_newGrp = [[getPos horde_spawner select 0,getPos horde_spawner select 1,0], Resistance, configfile >> "CfgGroups" >> "Indep" >> "Ryanzombiesfaction" >> "Ryanzombiesgroupfast" >> "Ryanzombiesgroupfast3", [], [], [0.2, 0.2]] call BIS_fnc_spawnGroup;
+	_newGrp = createGroup resistance;
+
+	for "_i" from 0 to (_amount) - 1 do
+	{
+		waitUntil {{side _x == east || side _x == west || side _x == resistance} count allGroups < 432};
+		//Create unit
+		_side = resistance;
+		if ({side _x == resistance} count allGroups >= 144) then {_side = west;};
+		if (_side == west && {side _x == west} count allGroups >= 144) then {_side = east;};
+
+		_zombie = _newGrp createUnit [(selectRandom AVBD_FastZombies), _pos, [], 50, "NONE"];
+		_zombie enableSimulation true;
+	};
+
 
 	// Enable Dynamic simulation
 	_newGrp enableDynamicSimulation true;

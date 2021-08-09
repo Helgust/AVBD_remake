@@ -50,7 +50,7 @@ addMissionEventHandler ["EntityRespawned",
 	if (missionNamespace getVariable "HLG_randomHordes" == 1) then
 	{
 		
-        _hordes = [3,6] spawn HLG_fnc_AVBD_Horde;
+        _hordes = [5,8] spawn HLG_fnc_AVBD_Horde;
 
 	};
 };

@@ -18,7 +18,7 @@ private _event = selectRandom HLG_EfC_events;
 
 // Remove the selected event from array so it's not repeated. If all events happened, restart it.
 HLG_EfC_events = HLG_EfC_events - [_event];
-if (count HLG_EfC_events == 0) then {HLG_EfC_events = ["Paradrop","Mortar","Blackfoot","Mi17","SU25"]};
+if (count HLG_EfC_events == 0) then {HLG_EfC_events = ["Paradrop","Mortar","Blackfoot","Mi17","SU25","Horde"]};
 
 // Trigger next event
 //str _delayFinal remoteExec ["hint"];
