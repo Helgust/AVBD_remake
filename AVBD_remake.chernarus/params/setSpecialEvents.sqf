@@ -1,7 +1,7 @@
 if (isServer) then
 {
-	HLG_EfC_events = ["Paradrop","Mortar","Blackfoot","Mi17","SU25"];
-	 //HLG_EfC_events = ["Horde"];
+	//HLG_EfC_events = ["Paradrop","Mortar","Blackfoot","Mi17","SU25"];
+	 HLG_EfC_events = ["rndBlastToNearCity"];
 
 	_specialEvents = param [0,1,[999]];
 

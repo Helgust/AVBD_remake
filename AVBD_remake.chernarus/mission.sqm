@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=9;
+	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=4644;
+		nextID=4659;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2484;
+		nextID=2604;
 	};
 	class Camera
 	{
-		pos[]={8740.6611,427.23831,9133.7031};
-		dir[]={-0.038248908,-0.33797318,0.94037819};
-		up[]={-0.013735351,0.94115573,0.33769393};
-		aside[]={0.99917382,0,0.040640362};
+		pos[]={-1053.6105,311.15933,9347.1943};
+		dir[]={0.95931607,-0.060686711,-0.27573535};
+		up[]={0.058325239,0.99815691,-0.016764371};
+		aside[]={-0.27624449,0,-0.96108752};
 	};
 };
 binarizationWanted=0;
@@ -47,6 +47,7 @@ addons[]=
 	"CUP_Weapons_SKS",
 	"A3_Characters_F",
 	"A3_Weapons_F_Orange",
+	"CUP_Creatures_Military_Russia",
 	"CUP_Weapons_GrenadeLaunchers",
 	"CUP_Weapons_MicroUZI",
 	"A3_Characters_F_Enoch_Facewear",
@@ -71,13 +72,14 @@ addons[]=
 	"CUP_StandaloneTerrains_Core",
 	"CUP_AirVehicles_Su25",
 	"A3_Structures_F_Mil_Helipads",
-	"ryanzombiesfunctions"
+	"ryanzombiesfunctions",
+	"A3_Armor_F_Tank_MBT_04"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=38;
+		items=40;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -170,130 +172,142 @@ class AddonsMetaData
 		};
 		class Item16
 		{
+			className="CUP_Creatures_Military_Russia";
+			name="CUP_Creatures_Military_Russia";
+		};
+		class Item17
+		{
 			className="CUP_Weapons_GrenadeLaunchers";
 			name="CUP_Weapons_GrenadeLaunchers";
 		};
-		class Item17
+		class Item18
 		{
 			className="CUP_Weapons_MicroUZI";
 			name="CUP_Weapons_MicroUZI";
 		};
-		class Item18
+		class Item19
 		{
 			className="A3_Characters_F_Enoch";
 			name="Arma 3 Contact Platform - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item19
+		class Item20
 		{
 			className="CUP_Creatures_Military_NAPA";
 			name="CUP_Creatures_Military_NAPA";
 		};
-		class Item20
+		class Item21
 		{
 			className="CUP_Weapons_HuntingRifle";
 			name="CUP_Weapons_HuntingRifle";
 		};
-		class Item21
+		class Item22
 		{
 			className="CUP_Weapons_SA61";
 			name="CUP_Weapons_SA61";
 		};
-		class Item22
+		class Item23
 		{
 			className="CUP_Weapons_RPG18";
 			name="CUP_Weapons_RPG18";
 		};
-		class Item23
+		class Item24
 		{
 			className="CUP_Creatures_Military_USArmy";
 			name="CUP_Creatures_Military_USArmy";
 		};
-		class Item24
+		class Item25
 		{
 			className="CUP_Weapons_Saiga12k";
 			name="CUP_Weapons_Saiga12k";
 		};
-		class Item25
+		class Item26
 		{
 			className="CUP_Creatures_Military_SLA";
 			name="CUP_Creatures_Military_SLA";
 		};
-		class Item26
+		class Item27
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item27
+		class Item28
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item28
+		class Item29
 		{
 			className="A3_Structures_F_Exp";
 			name="Arma 3 Apex - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item29
+		class Item30
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item30
+		class Item31
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item31
+		class Item32
 		{
 			className="A3_Structures_F_Enoch_Military";
 			name="Arma 3 Contact Platform - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item32
+		class Item33
 		{
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item33
+		class Item34
 		{
 			className="CUP_Creatures_StaticWeapons";
 			name="CUP_Creatures_StaticWeapons";
 		};
-		class Item34
+		class Item35
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
-		class Item35
+		class Item36
 		{
 			className="CUP_StandaloneTerrains_Core";
 			name="CUP_StandaloneTerrains_Core";
 		};
-		class Item36
+		class Item37
 		{
 			className="CUP_AirVehicles_Su25";
 			name="CUP_AirVehicles_Su25";
 		};
-		class Item37
+		class Item38
 		{
 			className="ryanzombiesfunctions";
 			name="ryanzombiesfunctions";
 			author="Ryan";
+		};
+		class Item39
+		{
+			className="A3_Armor_F_Tank";
+			name="Arma 3 Tank - Armored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -317,7 +331,8 @@ dlcs[]=
 	"Expansion",
 	"Enoch",
 	"Contact",
-	"CUP_Vehicles"
+	"CUP_Vehicles",
+	"Tank"
 };
 randomSeed=2296344;
 class ScenarioData
@@ -528,7 +543,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=140;
+		items=141;
 		class Item0
 		{
 			dataType="Marker";
@@ -557,7 +572,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6321.481,336.80777,8306.1611};
+								position[]={6354.3062,344.64359,8424.6641};
 								angles[]={0,1.630155,0};
 							};
 							side="East";
@@ -732,7 +747,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6308.7231,336.41296,8312.7441};
+								position[]={6341.5483,343.90021,8431.2471};
 								angles[]={0,1.6301595,0};
 							};
 							side="East";
@@ -858,7 +873,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6304.6108,335.40628,8301.4297};
+								position[]={6337.436,343.10861,8419.9326};
 								angles[]={0,1.6301574,0};
 							};
 							side="East";
@@ -989,7 +1004,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6306.4849,335.67081,8303.9961};
+								position[]={6339.3101,343.35657,8422.499};
 								angles[]={0,1.630155,0};
 							};
 							side="East";
@@ -1132,7 +1147,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6309.0591,336.65137,8315.9336};
+								position[]={6341.8843,344.07123,8434.4365};
 								angles[]={0,1.6301574,0};
 							};
 							side="East";
@@ -1222,6 +1237,7 @@ class Mission
 							};
 							id=103;
 							type="CUP_O_INS_Soldier_GL";
+							atlOffset=-3.0517578e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -1270,7 +1286,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6305.0181,335.72601,8306.2744};
+								position[]={6337.8433,343.3367,8424.7773};
 								angles[]={0,1.6301574,0};
 							};
 							side="East";
@@ -1400,7 +1416,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6308.4097,336.22043,8310.209};
+								position[]={6341.2349,343.76459,8428.7119};
 								angles[]={0,1.6301574,0};
 							};
 							side="East";
@@ -1458,7 +1474,6 @@ class Mission
 							};
 							id=102;
 							type="CUP_O_INS_Soldier_LAT";
-							atlOffset=-9.1552734e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -1507,7 +1522,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6305.1304,335.89551,8308.6553};
+								position[]={6337.9556,343.44043,8427.1582};
 								angles[]={0,1.630155,0};
 							};
 							side="East";
@@ -1632,7 +1647,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6305.3999,336.03894,8310.5225};
+								position[]={6338.2251,343.53561,8429.0254};
 								angles[]={0,1.630155,0};
 							};
 							side="East";
@@ -13148,7 +13163,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=3;
+							value=4;
 						};
 					};
 				};
@@ -13200,7 +13215,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1.25;
+							value=1;
 						};
 					};
 				};
@@ -13990,6 +14005,25 @@ class Mission
 				};
 				nAttributes=7;
 			};
+		};
+		class Item140
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6378.3394,353.25131,8495.5342};
+				angles[]={6.2378831,0,0.090418898};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+			};
+			id=4656;
+			type="O_MBT_04_command_F";
 		};
 	};
 };

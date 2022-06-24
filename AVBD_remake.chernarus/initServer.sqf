@@ -35,12 +35,12 @@ addMissionEventHandler ["EntityRespawned",
 	_initSpawn call BIS_fnc_removeRespawnPosition;
 };
 
-// Start special events if enabled
+//Start special events if enabled
 [] spawn {
 	sleep 5;
 	if (missionNamespace getVariable "HLG_specialEvents" == 1) then
 	{
-        _events = [10,15] spawn HLG_fnc_EfC_specialEvents;
+        _events = [0,1] spawn HLG_fnc_EfC_specialEvents;
 
 	};
 };
@@ -50,10 +50,15 @@ addMissionEventHandler ["EntityRespawned",
 	if (missionNamespace getVariable "HLG_randomHordes" == 1) then
 	{
 		
-        _hordes = [5,8] spawn HLG_fnc_AVBD_Horde;
+        _hordes = [0,1] spawn HLG_fnc_AVBD_Horde;
 
 	};
 };
+
+// [] spawn {
+// 	sleep 5;		
+//     _ambient = [0,1] spawn HLG_fnc_AVBD_RndAmbientOST;
+// };
 
 // Limit equipment of already existing enemy units
 [] spawn {
@@ -130,6 +135,46 @@ AVBD_Uniform=
 	"rds_uniform_Woodlander4"
 
 ];
+
+AVBD_BigHordeSFX  =
+[
+	"HordeBig1",
+	"HordeBig2"
+];
+
+AVBD_SmallHordeSFX  =
+[
+	"Ebaka1",
+	"Ebaka2",
+	"Ebaka3",
+	"Ebaka4",
+	"Ebaka5",
+	"Ebaka6",
+	"Ebaka7"
+];
+
+AVBD_AmbSFX=
+[
+	"Dogs1",
+	"Dogs2",
+	"Dogs3",
+	"Dogs4",
+	"Dogs5",
+	"HordeSmall1",
+	"HordeSmall2",
+	"HordeSmall3",
+	"HordeSmall4",
+	"HordeSmall5",
+	"Wolves1",
+	"Distanthum1",
+	"Distanthum2",
+	"Distantscream1",
+	"Gunfirescream1",
+	"Gunfirescream2",
+	"Gunfirescream3",
+	"Gunfirescream4"
+];
+
 
 BIS_supportVehicles =
 [

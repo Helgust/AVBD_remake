@@ -1,5 +1,4 @@
 //Zombie generator script by Celery
-hint str !isServer;
 if (!isServer) exitWith {};
 waitUntil {{isNil _x} count ["AVBD_minspawndist", "AVBD_maxspawndist", "AVBD_despawndist", "AVBD_defaultdensity", "AVBD_hordereservedgroups", "AVBD_debug", "BIS_fnc_inTrigger", "BIS_fnc_distance2D"] == 0};
 _trigger = _this select 0;
@@ -74,7 +73,7 @@ while {_amount > 0} do
 		//Debug marker
 		if (AVBD_debug) then
 		{
-			_marker = createMarkerLocal ["debugmarker%1" + str random 100000, _pos];
+			Local ["debugmarker%1" + str random 100000, _pos];
 			_marker setMarkerTypeLocal "hd_dot";
 			_marker setMarkerColorLocal "ColorGreen";
 			_marker setMarkerSizeLocal [0.5, 0.5];

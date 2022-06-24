@@ -163,16 +163,181 @@ class CfgSounds
 		sound[]={"\Sound\horde.ogg", 100, 1.0,1000};
 		titles[]={};
 	};
+	class Dogs1
+	{
+		name="Dogs1";
+		sound[]={"\Sound\dogs1.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+	class Dogs2
+	{
+		name="Dogs2";
+		sound[]={"\Sound\dogs2.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+	class Dogs3
+	{
+		name="Dogs3";
+		sound[]={"\Sound\dogs3.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+	class Dogs4
+	{
+		name="Dogs4";
+		sound[]={"\Sound\dogs4.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+	class Dogs5
+	{
+		name="Dogs5";
+		sound[]={"\Sound\dogs5.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+	class HordeBig1
+	{
+		name="HordeBig1";
+		sound[]={"\Sound\horde.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+	class HordeBig2
+	{
+		name="HordeBig2";
+		sound[]={"\Sound\horde1.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+
+	class HordeSmall1
+	{
+		name="HordeSmall1";
+		sound[]={"\Sound\spawner1.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+	class HordeSmall2
+	{
+		name="HordeSmall2";
+		sound[]={"\Sound\spawner2.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+	class HordeSmall3
+	{
+		name="HordeSmall3";
+		sound[]={"\Sound\spawner3.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+	class HordeSmall4
+	{
+		name="HordeSmall4";
+		sound[]={"\Sound\spawner4.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+	class HordeSmall5
+	{
+		name="HordeSmall5";
+		sound[]={"\Sound\spawner5.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+	class Ebaka1
+	{
+		name="Ebaka1";
+		sound[]={"\Sound\ebaka1.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+	class Ebaka2
+	{
+		name="Ebaka2";
+		sound[]={"\Sound\ebaka2.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+	class Ebaka3
+	{
+		name="Ebaka3";
+		sound[]={"\Sound\ebaka3.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+	class Ebaka4
+	{
+		name="Ebaka4";
+		sound[]={"\Sound\ebaka4.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+	class Ebaka5
+	{
+		name="Ebaka5";
+		sound[]={"\Sound\ebaka5.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+	class Ebaka6
+	{
+		name="Ebaka6";
+		sound[]={"\Sound\ebaka6.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+	class Ebaka7
+	{
+		name="Ebaka7";
+		sound[]={"\Sound\ebaka7.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+
+	class Wolves1
+	{
+		name="Wolves1";
+		sound[]={"\Sound\wolves1.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+	class Distanthum1
+	{
+		name="Distanthum1";
+		sound[]={"\Sound\distanthum1.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+	class Distanthum2
+	{
+		name="Distanthum2";
+		sound[]={"\Sound\distanthum2.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+	class Distantscream1
+	{
+		name="Distantscream1";
+		sound[]={"\Sound\distantscream1.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+
+	class Gunfirescream1
+	{
+		name="Gunfirescream1";
+		sound[]={"\Sound\gunfirescream1.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+	class Gunfirescream2
+	{
+		name="Gunfirescream2";
+		sound[]={"\Sound\gunfirescream2.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+	class Gunfirescream3
+	{
+		name="Gunfirescream3";
+		sound[]={"\Sound\gunfirescream3.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+	class Gunfirescream4
+	{
+		name="Gunfirescream4";
+		sound[]={"\Sound\gunfirescream4.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
+
+	
+	
+
+	
+
 };
 class CfgMusic
 {
     tracks[]={};
-    class Radio1
-    {
-    name = "Radio1";
-    sound[] = {"\Music\Vitya.ogg", db-5.0, 1.0};
-    };
-
 	class auldale
 	{
 		name="auldale";
@@ -214,6 +379,7 @@ class CfgFunctions
 			class EfC_DisplayTickets	{};
 			class EfC_CDFStalkers	{};
 			class AVBD_Horde	{};
+			class AVBD_RndAmbientOST {};
 			class EfC_NATOStalkers		{};
 			class EfC_SniperTeam		{};
 			class EfC_HouseFind		{};
@@ -231,6 +397,7 @@ class CfgFunctions
 			class EfC_PopulatePost		{};
 			class EfC_PopulateTower		{};
 			class EfC_SpecialEvents		{};
+			class AVBD_attachChemlight	{};
 		};
 	};
 };

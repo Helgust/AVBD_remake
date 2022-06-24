@@ -9,8 +9,8 @@
 // Params
 params
 [
-	["_delayMin",10,[999]], // min delay in minutes
-	["_delayMax",15,[999]] // max delay in minutes
+	["_delayMin",0,[999]], // min delay in minutes
+	["_delayMax",2,[999]] // max delay in minutes
 ];
 
 private _delayFinal = (((random (_delayMax - _delayMin)) + _delayMin) * 60);
@@ -18,7 +18,7 @@ private _event = selectRandom HLG_EfC_events;
 
 // Remove the selected event from array so it's not repeated. If all events happened, restart it.
 HLG_EfC_events = HLG_EfC_events - [_event];
-if (count HLG_EfC_events == 0) then {HLG_EfC_events = ["Paradrop","Mortar","Blackfoot","Mi17","SU25","Horde"]};
+if (count HLG_EfC_events == 0) then {HLG_EfC_events = ["rndBlastToNearCity"]};
 
 // Trigger next event
 //str _delayFinal remoteExec ["hint"];
@@ -48,6 +48,52 @@ if (_event == "Mortar") then
 	_target = selectRandom allPlayers;
 	_null = [_target,"Sh_82mm_AMOS",200,18,2,nil,nil,nil,nil,["mortar1","mortar2"]] spawn BIS_fnc_fireSupportVirtual;
 
+};
+
+if (_event == "rndBlastToNearCity") then
+{
+	str "Special Event rndBlastToNearCity" remoteExec ["systemChat"];
+
+	//["Event: %1",_event] call BIS_fnc_logFormat;
+
+	"DistantMortar" remoteExec ["playSound"];
+	sleep 2;
+	private _allLocationTypes = [];
+	private _nearLocations = [];
+	"_allLocationTypes pushBack configName _x" configClasses (configFile >> "CfgLocationTypes");
+	// "DistantMortar" remoteExec ["playSound"];
+	// sleep 2;
+	// "DistantMortar" remoteExec ["playSound"];
+	// sleep 2;
+	// "DistantMortar" remoteExec ["playSound"];
+	// sleep 2;
+	// "DistantMortar" remoteExec ["playSound"];
+	// sleep 2;
+	// "DistantMortar" remoteExec ["playSound"];
+
+	sleep 15;
+	_target = selectRandom allPlayers;
+	_rndNearLocations  =  nearestLocations[_target, ["NameCityCapital","NameCity","NameVillage"], 700];
+	_targetCity = selectRandom _rndNearLocations;
+
+	while {position _target distance _x <= 500} do
+	{
+		_targetCity = _x;
+	};
+	//
+	// {
+	// 	mytext = format ["%1 (%2) - %3m", _x, text _x, position player distance _x];
+	// 	str mytext remoteExec ["systemChat"];
+
+	// } forEach _nearLocations;
+	
+	str position _targetCity + text _targetCity remoteExec ["systemChat"];
+	"Planes_PassBy" remoteExec ["playSound"];
+	
+	//_null = [position _rndNearLocation,"R_80mm_HE",300,2,3,nil,nil,nil,nil,["mortar1","mortar2"]] spawn BIS_fnc_fireSupportVirtual;
+	_null = [position _targetCity,"Rocket_03_HE_F",300,18,0.1,nil,nil,100,nil,["shell1","shell2","shell3"]] spawn BIS_fnc_fireSupportVirtual;
+
+	str "Special Event rndBlastToNearCity END" remoteExec ["systemChat"];
 };
 
 // CLUSTER - not used (Orange has better clusters anyway)
@@ -116,6 +162,7 @@ if (_event == "Paradrop") then
 // CAS - 2 Littlebirds
 if (_event == "Mi17") then
 {
+	hint "CHECK";
 	//str "Special Event Mi17" remoteExec ["hint"];
 	//["Event: %1",_event] call BIS_fnc_logFormat;
 
@@ -124,6 +171,7 @@ if (_event == "Mi17") then
 
 	// 1st Pawnee
 	_cas = createVehicle ["CUP_B_Mi171Sh_Unarmed_ACR", [0,0,75], [], 0, "FLY"];
+	_cas setPilotLight true;
 	createVehicleCrew _cas;
 	_casCrew = crew _cas;
 	_casGroup = group (_casCrew select 0);

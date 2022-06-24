@@ -39,6 +39,11 @@ hndl ppEffectAdjust [1, 1.15, 0, [0.0, 0.0, 0.0, 0.0], [0.5, 0.8, 0.9, 0.5],  [0
 hndl ppEffectCommit 0;  
 hndl ppEffectEnable true;
 
+[player, true] call HLG_fnc_AVBD_attachChemlight;
+//[player,TRUE] call BIS_fnc_attachChemlight;
+
+
+
 // Set available loadout
 if (typeOf player == "CUP_O_INS_Officer") then {
 	if (BIS_loadoutLevel == 0) then {[player,"CUP_O_INS_Officer"] call BIS_fnc_addRespawninventory; player setUnitLoadout [["CUP_arifle_AKS74U_railed","","acc_flashlight","",["CUP_30Rnd_TE1_Red_Tracer_545x39_AK_M",30],[],""],[],["CUP_hgun_Makarov","","","",["CUP_8Rnd_9x18_Makarov_M",8],[],""],["CUP_U_C_Policeman_01",[["FirstAidKit",1],["SmokeShell",2,1],["CUP_8Rnd_9x18_Makarov_M",2,8]]],["CUP_V_C_Police_Holster",[["CUP_30Rnd_TE1_Red_Tracer_545x39_AK_M",3,30],["CUP_HandGrenade_RGD5",2,1]]],["CUP_B_CivPack_WDL",[["CUP_30Rnd_TE1_Red_Tracer_545x39_AK_M",4,30]]],"CUP_H_C_Policecap_01",nil,["Rangefinder","","","",[],[],""],["ItemMap","","ItemRadio","ItemCompass","ItemWatch",""]]};

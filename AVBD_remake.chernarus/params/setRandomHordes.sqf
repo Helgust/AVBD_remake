@@ -1,6 +1,6 @@
 if (isServer) then
 {
-	 HLG_AVBD_hordeEvents = ["Horde"];
+	 HLG_AVBD_hordeEvents = [""];
 
 	_hordeEvents = param [0,1,[999]];
 

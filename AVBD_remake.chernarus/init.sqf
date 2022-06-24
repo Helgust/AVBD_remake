@@ -35,7 +35,7 @@ AVBD_randomhordeminspawndist=150;
 AVBD_randomhordemaxspawndist=450;
 
 //Minimum and maximum number of zombies in a random horde
-AVBD_randomhordeminamount=10;
+AVBD_randomhordeminamount=1;
 AVBD_randomhordemaxamount=40;
 
 //Groups reserved for hordes - allows hordes to spawn in very crowded areas

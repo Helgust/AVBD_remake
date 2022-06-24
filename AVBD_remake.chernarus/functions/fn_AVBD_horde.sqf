@@ -5,8 +5,8 @@ Create Horde of zombies to stalk players
 // Params
 params
 [
-	["_delayMin",3,[999]], // min delay in minutes default 3 
-	["_delayMax",6,[999]] // max delay in minutes default 10
+	["_delayMin",0,[999]], // min delay in minutes default 3 
+	["_delayMax",1,[999]] // max delay in minutes default 10
 ];
 private _delayFinal = (((random (_delayMax - _delayMin)) + _delayMin) * 60);
 private _event = selectRandom HLG_AVBD_hordeEvents;
@@ -14,20 +14,23 @@ private _event = selectRandom HLG_AVBD_hordeEvents;
 // HLG_AVBD_hordes = HLG_AVBD_hordes - [_event];
 // if (count HLG_AVBD_hordes == 0) then {HLG_AVBD_hordeEvents = ["horde"]};
 sleep _delayFinal;
-_null = [_delayMin,_delayMax] spawn HLG_fnc_AVBD_horde;
+_null = [_delayMin,_delayMax] spawn HLG_fnc_AVBD_Horde;
 
 if (_event == "Horde") then
 {
 	_livePlayers = [];
 	{if (alive _x) then {_livePlayers pushBackUnique _x}} forEach allPlayers;
-	hint "horde";
-	"horde" remoteExec ["playSound"];
-	sleep 2;
+	
 
 	_averagex=0;
 	_averagey=0;
 	_divide=count _livePlayers;
 	_amount=AVBD_randomhordeminamount+floor random (AVBD_randomhordemaxamount-AVBD_randomhordeminamount+1);
+	if(_amount > 10) 
+	then { (selectRandom AVBD_SmallHordeSFX) remoteExec ["playSound"];}
+	else { (selectRandom AVBD_BigHordeSFX) remoteExec ["playSound"];};
+	
+	sleep 2;
 	hint str _divide;
 	waitUntil {sleep 5; !(_divide==0 or {side _x==east} count allGroups>=(144-_amount) or {currentWeapon _x!=""} count  units BIS_grpMain==0) };
 	{_averagex=_averagex+(getPos vehicle _x select 0);
