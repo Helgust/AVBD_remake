@@ -57,7 +57,7 @@ addMissionEventHandler ["EntityRespawned",
 
 // [] spawn {
 // 	sleep 5;		
-//     _ambient = [0,1] spawn HLG_fnc_AVBD_RndAmbientOST;
+//     _ambient = [0,1] spawn HLG_fnc_AVBD_rndAmbientOST;
 // };
 
 // Limit equipment of already existing enemy units
@@ -160,11 +160,6 @@ AVBD_AmbSFX=
 	"Dogs3",
 	"Dogs4",
 	"Dogs5",
-	"HordeSmall1",
-	"HordeSmall2",
-	"HordeSmall3",
-	"HordeSmall4",
-	"HordeSmall5",
 	"Wolves1",
 	"Distanthum1",
 	"Distanthum2",
@@ -172,9 +167,13 @@ AVBD_AmbSFX=
 	"Gunfirescream1",
 	"Gunfirescream2",
 	"Gunfirescream3",
-	"Gunfirescream4"
-];
+	"Gunfirescream4",
+	"Signal1",
+	"Signal2",
+	"Signal3",
+	"Signal4"
 
+];
 
 BIS_supportVehicles =
 [

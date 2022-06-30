@@ -5,8 +5,8 @@ Create Horde of zombies to stalk players
 // Params
 params
 [
-	["_delayMin",3,[999]], // min delay in minutes default 3 
-	["_delayMax",5,[999]] // max delay in minutes default 10
+	["_delayMin",0,[999]], // min delay in minutes default 3 
+	["_delayMax",0.5,[999]] // max delay in minutes default 10
 ];
 private _delayFinal = (((random (_delayMax - _delayMin)) + _delayMin) * 60);
 private _event = selectRandom HLG_AVBD_hordeEvents;
@@ -14,7 +14,7 @@ private _event = selectRandom HLG_AVBD_hordeEvents;
 // HLG_AVBD_hordes = HLG_AVBD_hordes - [_event];
 // if (count HLG_AVBD_hordes == 0) then {HLG_AVBD_hordeEvents = ["horde"]};
 sleep _delayFinal;
-_null = [_delayMin,_delayMax] spawn HLG_fnc_AVBD_RndAmbientOST;
+_null = [_delayMin,_delayMax] spawn HLG_fnc_AVBD_rndAmbientOST;
 
 _sound  = selectRandom AVBD_AmbSFX;
 hint str _sound;

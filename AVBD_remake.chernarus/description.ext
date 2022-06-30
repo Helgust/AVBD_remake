@@ -285,56 +285,69 @@ class CfgSounds
 		sound[]={"\Sound\wolves1.ogg", 100, 1.0,1000};
 		titles[]={};
 	};
-	class Distanthum1
+
+	class Signal1
 	{
-		name="Distanthum1";
-		sound[]={"\Sound\distanthum1.ogg", 100, 1.0,1000};
-		titles[]={};
-	};
-	class Distanthum2
-	{
-		name="Distanthum2";
-		sound[]={"\Sound\distanthum2.ogg", 100, 1.0,1000};
-		titles[]={};
-	};
-	class Distantscream1
-	{
-		name="Distantscream1";
-		sound[]={"\Sound\distantscream1.ogg", 100, 1.0,1000};
+		name="Signal1";
+		sound[]={"\Sound\Signal\d6_signal_1.ogg", 100, 1.0,1000};
 		titles[]={};
 	};
 
-	class Gunfirescream1
+	class Signal2
 	{
-		name="Gunfirescream1";
-		sound[]={"\Sound\gunfirescream1.ogg", 100, 1.0,1000};
-		titles[]={};
-	};
-	class Gunfirescream2
-	{
-		name="Gunfirescream2";
-		sound[]={"\Sound\gunfirescream2.ogg", 100, 1.0,1000};
-		titles[]={};
-	};
-	class Gunfirescream3
-	{
-		name="Gunfirescream3";
-		sound[]={"\Sound\gunfirescream3.ogg", 100, 1.0,1000};
-		titles[]={};
-	};
-	class Gunfirescream4
-	{
-		name="Gunfirescream4";
-		sound[]={"\Sound\gunfirescream4.ogg", 100, 1.0,1000};
+		name="Signal2";
+		sound[]={"\Sound\Signal\d6_signal_2.ogg", 100, 1.0,1000};
 		titles[]={};
 	};
 
-	
-	
+	class Signal3
+	{
+		name="Signal3";
+		sound[]={"\Sound\Signal\d6_signal_3.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
 
-	
-
+	class Signal4
+	{
+		name="Signal4";
+		sound[]={"\Sound\Signal\d6_signal_4.ogg", 100, 1.0,1000};
+		titles[]={};
+	};
 };
+
+class CfgSFX
+{
+	class Squeak
+	{
+		sound0[] = {"\Sound\Squeak\str_squeak_1.ogg", db-5, 1.0, 1000, 0.2, 0, 15, 30};
+		sound1[] = {"\Sound\Squeak\str_squeak_2.ogg", db-5, 1.0, 1000, 0.2, 0, 15, 30};
+		sound2[] = {"\Sound\Squeak\str_squeak_3.ogg", db-5, 1.0, 1000, 0.2, 0, 15, 30};
+		sound3[] = {"\Sound\Squeak\str_squeak_4.ogg", db-5, 1.0, 1000, 0.2, 0, 15, 30};
+		sound4[] = {"\Sound\Squeak\str_squeak_5.ogg", db-5, 1.0, 1000, 0.2, 0, 15, 30};
+		sound5[] = {"\Sound\Squeak\str_squeak_6.ogg", db-5, 1.0, 1000, 0.2, 0, 15, 30};
+		sound6[] = {"\Sound\Squeak\str_squeak_7.ogg", db-5, 1.0, 1000, 0.2, 0, 15, 30};
+		sound7[] = {"\Sound\Squeak\str_squeak_8.ogg", db-5, 1.0, 1000, 0.2, 0, 15, 30};
+		sound8[] = {"\Sound\Squeak\str_squeak_9.ogg", db-5, 1.0, 1000, 0.2, 0, 15, 30};
+		sounds[] = {sound0, sound1, sound2, sound3, sound4, sound5, sound6, sound7, sound8};
+		empty[] = {"", 0, 0, 0, 0, 0, 0, 0};
+	};
+
+	class Hit
+	{
+		sound0[] = {"\Sound\Hit\str_hit_1.ogg", db-5, 1.0, 1000, 0.2, 0, 15, 30};
+		sound1[] = {"\Sound\Hit\str_hit_2.ogg", db-5, 1.0, 1000, 0.2, 0, 15, 30};
+		sound2[] = {"\Sound\Hit\str_hit_3.ogg", db-5, 1.0, 1000, 0.2, 0, 15, 30};
+		sound3[] = {"\Sound\Hit\str_hit_4.ogg", db-5, 1.0, 1000, 0.2, 0, 15, 30};
+		sound4[] = {"\Sound\Hit\str_hit_5.ogg", db-5, 1.0, 1000, 0.2, 0, 15, 30};
+		sound5[] = {"\Sound\Hit\str_hit_6.ogg", db-5, 1.0, 1000, 0.2, 0, 15, 30};
+		sound6[] = {"\Sound\Hit\str_hit_7.ogg", db-5, 1.0, 1000, 0.2, 0, 15, 30};
+		sound7[] = {"\Sound\Hit\str_hit_8.ogg", db-5, 1.0, 1000, 0.2, 0, 15, 30};
+		sound8[] = {"\Sound\Hit\str_hit_9.ogg", db-5, 1.0, 1000, 0.2, 0, 15, 30};
+		sounds[] = {sound0, sound1, sound2, sound3, sound4, sound5, sound6, sound7, sound8};
+		empty[] = {"", 0, 0, 0, 0, 0, 0, 0};
+	};
+};
+
 class CfgMusic
 {
     tracks[]={};
@@ -368,7 +381,58 @@ class CfgMusic
 		sound[]={"\Music\pavelock.ogg",db+10,1};
 		titles[]={};
 	};
+
+	class epistel
+	{
+		name="epistel";
+		sound[]={"\Music\epistel.ogg",db+0,1};
+		titles[]={};
+	};
+
+	class gyer
+	{
+		name="gyer";
+		sound[]={"\Music\gyer.ogg",db+5,1};
+		titles[]={};
+	};
+
+	class didge
+	{
+		name="didge";
+		sound[]={"\Music\didge.ogg",db+2,1};
+		titles[]={};
+	};
+
+	class bad
+	{
+		name="bad";
+		sound[]={"\Music\bad.ogg",db+5,1};
+		titles[]={};
+	};
+
+	class ambient_1
+	{
+		name="ambient_1";
+		sound[]={"\Music\ambient_1.ogg",db+5,1};
+		titles[]={};
+	};
 };
+
+
+class CfgVehicles
+{
+	class Squeak 
+	{
+		sound = "Squeak"; // reference to CfgSFX class
+	};
+
+	class Hit 
+	{
+		sound = "Hit"; // reference to CfgSFX class
+	};
+};
+
+
 class CfgFunctions
 {
 	class HLG
@@ -379,7 +443,7 @@ class CfgFunctions
 			class EfC_DisplayTickets	{};
 			class EfC_CDFStalkers	{};
 			class AVBD_Horde	{};
-			class AVBD_RndAmbientOST {};
+			class AVBD_rndAmbientOST {};
 			class EfC_NATOStalkers		{};
 			class EfC_SniperTeam		{};
 			class EfC_HouseFind		{};

@@ -10,11 +10,13 @@
 params
 [
 	["_delayMin",0,[999]], // min delay in minutes
-	["_delayMax",2,[999]] // max delay in minutes
+	["_delayMax",0.2,[999]] // max delay in minutes
 ];
 
 private _delayFinal = (((random (_delayMax - _delayMin)) + _delayMin) * 60);
 private _event = selectRandom HLG_EfC_events;
+
+_markers = [];
 
 // Remove the selected event from array so it's not repeated. If all events happened, restart it.
 HLG_EfC_events = HLG_EfC_events - [_event];
@@ -53,26 +55,12 @@ if (_event == "Mortar") then
 if (_event == "rndBlastToNearCity") then
 {
 	str "Special Event rndBlastToNearCity" remoteExec ["systemChat"];
-
-	//["Event: %1",_event] call BIS_fnc_logFormat;
-
-	"DistantMortar" remoteExec ["playSound"];
-	sleep 2;
-	private _allLocationTypes = [];
-	private _nearLocations = [];
+	_allLocationTypes = [];
+	_nearLocations = [];
 	"_allLocationTypes pushBack configName _x" configClasses (configFile >> "CfgLocationTypes");
-	// "DistantMortar" remoteExec ["playSound"];
-	// sleep 2;
-	// "DistantMortar" remoteExec ["playSound"];
-	// sleep 2;
-	// "DistantMortar" remoteExec ["playSound"];
-	// sleep 2;
-	// "DistantMortar" remoteExec ["playSound"];
-	// sleep 2;
-	// "DistantMortar" remoteExec ["playSound"];
 
-	sleep 15;
 	_target = selectRandom allPlayers;
+	_targetPos = position _target;
 	_rndNearLocations  =  nearestLocations[_target, ["NameCityCapital","NameCity","NameVillage"], 700];
 	_targetCity = selectRandom _rndNearLocations;
 
@@ -80,20 +68,77 @@ if (_event == "rndBlastToNearCity") then
 	{
 		_targetCity = _x;
 	};
-	//
-	// {
-	// 	mytext = format ["%1 (%2) - %3m", _x, text _x, position player distance _x];
-	// 	str mytext remoteExec ["systemChat"];
-
-	// } forEach _nearLocations;
 	
 	str position _targetCity + text _targetCity remoteExec ["systemChat"];
-	"Planes_PassBy" remoteExec ["playSound"];
 	
 	//_null = [position _rndNearLocation,"R_80mm_HE",300,2,3,nil,nil,nil,nil,["mortar1","mortar2"]] spawn BIS_fnc_fireSupportVirtual;
-	_null = [position _targetCity,"Rocket_03_HE_F",300,18,0.1,nil,nil,100,nil,["shell1","shell2","shell3"]] spawn BIS_fnc_fireSupportVirtual;
+	//_null = [position _targetCity,"Rocket_03_HE_F",50,18,0.1,nil,nil,100,nil,["shell1","shell2","shell3"]] spawn BIS_fnc_fireSupportVirtual;
+	_cas = createVehicle ["CUP_B_Su25_Dyn_CDF", [(_targetPos select 0),(_targetPos select 1) - 3250, 125], [], 0, "FLY"];
+	createVehicleCrew _cas;
+	_casCrew = crew _cas;
+	_casGroup = group (_casCrew select 0);
+
+	_targetCityPos = position _targetCity;
+
+	// _cas setPosATL [(_targetPos select 0),(_targetPos select 1) - 1750, 125];
+	_cas flyInHeight 125;
+	_cas forceSpeed 240;
+	_wpCAS01 = _casGroup addWaypoint [position _targetCity, 0];
+	_wpCAS01 setWaypointType "GUARD";
+	_awayWPPos = [(_targetCityPos select 0),(_targetCityPos select 1) + 3250, 0];
+	_wpCAS02 = _casGroup addWaypoint [_awayWPPos, 0];
+	_wpCAS02 setWaypointType "GUARD";
+	
+	waitUntil {sleep 0.2; (_cas distance2D _targetCityPos) < 600};
+	_null = [_targetCityPos,"Rocket_03_HE_F",50,15,0.1,nil,20,position_cas select 2,nil,["shell1","shell2","shell3"]] spawn BIS_fnc_fireSupportVirtual;
 
 	str "Special Event rndBlastToNearCity END" remoteExec ["systemChat"];
+};
+
+if (_event == "civCar") then
+{
+	str "Special Event banditPickup" remoteExec ["systemChat"];
+
+	_target = selectRandom allPlayers;
+	_targetPos = getPosATL _target;
+	_wpPos = [(_targetPos select 0) + 500, (_targetPos select 1) + 500, 0];
+	
+	_pickUpPos = [(_targetPos select 0) + 500,(_targetPos select 1) - 1500, 0];
+
+	_list = _pickUpPos nearRoads 500;
+	_list = [_list, [selectRandom allPlayers], {_input0 distance _x }, "DESCEND"] call BIS_fnc_sortBy;
+	_furtherstRoad = _list select 0;
+	_marker = createMarkerLocal ["debugmarker%1" + str random 100000, position _furtherstRoad];
+	_marker setMarkerTypeLocal "hd_dot";
+	_marker setMarkerColorLocal "ColorOrange";
+	_marker setMarkerSizeLocal [0.5, 0.5];
+	_markers set [count _markers, _marker];
+
+	_marker1 = createMarkerLocal ["debugmarker%1" + str random 100000, _wpPos];
+	_marker1 setMarkerTypeLocal "hd_dot";
+	_marker1 setMarkerColorLocal "ColorPink";
+	_marker1 setMarkerSizeLocal [0.5, 0.5];
+	_markers set [count _markers, _marker1];
+	
+	_posCar = position _furtherstRoad;
+	_pickup = createVehicle ["CUP_I_UAZ_Unarmed_UN", [_posCar select 0, _posCar select 1, 0.2], [], 0, "NONE"];
+	createVehicleCrew _pickup;
+	_pickupCrew = crew _pickup;
+	_pickupGroup = group (_pickupCrew select 0);
+
+	_pickup forceSpeed 50;
+	_pickupGroup setBehaviour "AWARE";
+	_pickupGroup setCombatMode "YELLOW";
+
+	// Delete heli when far away
+	waitUntil {sleep 5; (_pickup distance2D _targetPos) > 4000};
+
+	{deleteVehicle _x} forEach (_pickupCrew + [_pickup]);
+	deleteGroup _pickupGroup;
+
+	_wpPickup01 = _pickupGroup addWaypoint [_wpPos, 0];
+	_wpPickup02 = _pickupGroup addWaypoint [[100,100,150], 0];
+	
 };
 
 // CLUSTER - not used (Orange has better clusters anyway)
@@ -156,7 +201,6 @@ if (_event == "Paradrop") then
 
 	{deleteVehicle _x} forEach (_heliCrew + [_heli]);
 	deleteGroup _heliGroup;
-
 };
 
 // CAS - 2 Littlebirds

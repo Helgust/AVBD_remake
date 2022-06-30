@@ -47,7 +47,7 @@ AVBD_zombiebandagechance=0.04;
 //Debug mode - show markers for prepared positions and active zombies
 AVBD_debug=true;
 
-[1,["auldale",0,323,0.35],["Fallout",0,207,0.35],["cradle",0,367,0.35],["kurshok",0,210,0.35],["pavelock",0,121,0.35],["oldquarter",0,257,0.35],["Wasteland",0,195,0.35]] execVM "cly_jukebox.sqf";
+[1,["auldale",0,323,0.35], ["didge",0,97,0.35], ["epistel",0,65,0.35], ["gyer",0,130,0.25],["Fallout",0,207,0.35], ["bad",0,6,0.35], ["ambient_1",0,83,0.35], ["cradle",0,367,0.35],["kurshok",0,210,0.35],["pavelock",0,121,0.35],["oldquarter",0,257,0.35],["Wasteland",0,195,0.35]] execVM "cly_jukebox.sqf";
 
 _light = [] execVM "light.sqf";
 
