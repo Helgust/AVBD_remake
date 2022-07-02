@@ -79,6 +79,12 @@ addMissionEventHandler ["EntityRespawned",
 
 
 // Definitions of vehicles and groups to be spawned
+AVBD_EscCheckpoints =
+[
+	[2313,15384, 0], //grozovoyPereval
+	[18, 1600, 0] //Novigrad
+];
+
 BIS_civilCars =
 [
 	"CUP_C_Lada_CIV",
@@ -88,6 +94,11 @@ BIS_civilCars =
 	"C_Offroad_01_F",
 	"C_Truck_02_transport_F",
 	"CUP_C_Ural_Open_CIV_03"
+];
+
+BIS_battleCars =
+[
+	"CUP_O_BTR90_RU"
 ];
 
 AVBD_FastZombies =

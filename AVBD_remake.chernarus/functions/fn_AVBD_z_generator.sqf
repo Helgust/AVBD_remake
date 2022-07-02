@@ -73,7 +73,7 @@ while {_amount > 0} do
 		//Debug marker
 		if (AVBD_debug) then
 		{
-			createMarkerLocal ["debugmarker%1" + str random 100000, _pos];
+			_marker = createMarkerLocal ["debugmarker%1" + str random 100000, _pos];
 			_marker setMarkerTypeLocal "hd_dot";
 			_marker setMarkerColorLocal "ColorGreen";
 			_marker setMarkerSizeLocal [0.5, 0.5];

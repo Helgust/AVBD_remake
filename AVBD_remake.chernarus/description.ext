@@ -148,13 +148,13 @@ class CfgSounds
 	class SecretOfGreenMountain
 	{
 		name = "SecretOfGreenMountain";
-		sound[] = {"\Music\SecretOfGreenMountain.ogg",5000,1,40000};
+		sound[] = {"\Sound\Joke\SecretOfGreenMountain.ogg",5000,1,40000};
 		titles[] = {0,""};
 	};
 	class Oralo
 	{
 		name = "Oralo";
-		sound[] = {"\Music\oralo.ogg",5000,1,4000};
+		sound[] = {"\Sound\Joke\oralo.ogg",5000,1,4000};
 		titles[] = {0,""};
 	};
 	class Horde
@@ -286,31 +286,10 @@ class CfgSounds
 		titles[]={};
 	};
 
-	class Signal1
+	class Heli_DE
 	{
-		name="Signal1";
-		sound[]={"\Sound\Signal\d6_signal_1.ogg", 100, 1.0,1000};
-		titles[]={};
-	};
-
-	class Signal2
-	{
-		name="Signal2";
-		sound[]={"\Sound\Signal\d6_signal_2.ogg", 100, 1.0,1000};
-		titles[]={};
-	};
-
-	class Signal3
-	{
-		name="Signal3";
-		sound[]={"\Sound\Signal\d6_signal_3.ogg", 100, 1.0,1000};
-		titles[]={};
-	};
-
-	class Signal4
-	{
-		name="Signal4";
-		sound[]={"\Sound\Signal\d6_signal_4.ogg", 100, 1.0,1000};
+		name="Heli_DE";
+		sound[]={"\Sound\Joke\de_heli.ogg", 1000, 1.0,1000};
 		titles[]={};
 	};
 };
@@ -344,6 +323,16 @@ class CfgSFX
 		sound7[] = {"\Sound\Hit\str_hit_8.ogg", db-5, 1.0, 1000, 0.2, 0, 15, 30};
 		sound8[] = {"\Sound\Hit\str_hit_9.ogg", db-5, 1.0, 1000, 0.2, 0, 15, 30};
 		sounds[] = {sound0, sound1, sound2, sound3, sound4, sound5, sound6, sound7, sound8};
+		empty[] = {"", 0, 0, 0, 0, 0, 0, 0};
+	};
+
+	class Signal
+	{
+		sound0[] = {"\Sound\Signal\d6_signal_1.ogg", db-0, 1.0, 1000, 0.2, 0, 15, 30};
+		sound1[] = {"\Sound\Signal\d6_signal_2.ogg", db-0, 1.0, 1000, 0.2, 0, 15, 30};
+		sound2[] = {"\Sound\Signal\d6_signal_3.ogg", db-0, 1.0, 1000, 0.2, 0, 15, 30};
+		sound3[] = {"\Sound\Signal\d6_signal_4.ogg", db-0, 1.0, 1000, 0.2, 0, 15, 30};
+		sounds[] = {sound0, sound1, sound2, sound3};
 		empty[] = {"", 0, 0, 0, 0, 0, 0, 0};
 	};
 };
@@ -429,6 +418,11 @@ class CfgVehicles
 	class Hit 
 	{
 		sound = "Hit"; // reference to CfgSFX class
+	};
+
+	class Signal 
+	{
+		sound = "Signal"; // reference to CfgSFX class
 	};
 };
 
